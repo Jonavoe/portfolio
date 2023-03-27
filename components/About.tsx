@@ -7,7 +7,11 @@ type Props = {};
 
 export default function About({}: Props) {
 	return (
-		<div className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
+		<motion.div
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ duration: 1.5 }}
+			className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
 			<h3 className='absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl'>
 				About
 			</h3>
@@ -28,9 +32,10 @@ export default function About({}: Props) {
 					Aquí está mi{' '}
 					<span className='underline decoration-[#F7AB0A]/50'>
 						presentación
-					</span>:
+					</span>
+					:
 				</h4>
-				<p className='text-sm text-gray-400'>
+				<p className='text-base text-gray-400'>
 					Soy un desarrollador Front End Junior apasionado por la tecnología y
 					el diseño. Desde muy joven, siempre he sentido una gran curiosidad por
 					todo lo relacionado con la tecnología y cómo funciona. Me encanta
@@ -48,6 +53,6 @@ export default function About({}: Props) {
 					oportunidad de mejorar mis habilidades y aprender cosas nuevas.
 				</p>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
