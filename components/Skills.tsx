@@ -22,55 +22,61 @@ export default function Skills({}: Props) {
 			<div className='grid grid-cols-3 gap-5'>
 				<Skill
 					directionLeft={true}
-					img={'https://cdn-icons-png.flaticon.com/512/5968/5968292.png'}
+					img={'https://img.icons8.com/fluency/256/javascript.png'}
 					percentage={63}
 				/>
 				<Skill
 					directionLeft={true}
-					img={'https://cdn-icons-png.flaticon.com/512/1126/1126012.png'}
+					img={'https://img.icons8.com/officel/256/react.png'}
 					percentage={64}
 				/>
 				<Skill
 					directionLeft={true}
-					img={'https://cdn-icons-png.flaticon.com/512/732/732190.png'}
+					img={'https://img.icons8.com/color/256/css3.png'}
 					percentage={93}
 				/>
 				<Skill
 					directionLeft={true}
-					img={'https://cdn-icons-png.flaticon.com/512/1051/1051277.png'}
+					img={'https://img.icons8.com/fluency/256/html-5.png'}
 					percentage={82}
 				/>
 				<Skill
 					directionLeft={true}
-					img={'https://cdn-icons-png.flaticon.com/512/906/906324.png'}
+					img={'https://img.icons8.com/fluency/256/visual-studio-code-2019.png'}
 					percentage={80}
 				/>
 				<Skill
 					directionLeft={true}
-					img={'https://cdn-icons-png.flaticon.com/512/2111/2111432.png'}
+					img={'https://img.icons8.com/ios-glyphs/256/github.png'}
 					percentage={52}
 				/>
 				<Skill
-					img={'https://cdn-icons-png.flaticon.com/512/5968/5968358.png'}
+					directionLeft={false}
+					img={'https://img.icons8.com/color/256/sass.png'}
 					percentage={82}
 				/>
 				<Skill
-					img={'https://cdn-icons-png.flaticon.com/512/5968/5968342.png'}
+					directionLeft={false}
+					img={'https://img.icons8.com/color/256/postgreesql.png'}
 					percentage={62}
 				/>
 				<Skill
+					directionLeft={false}
 					img={'https://img.icons8.com/nolan/256/express-js.png'}
 					percentage={60}
 				/>
 				<Skill
+					directionLeft={false}
 					img={'https://img.icons8.com/color/256/redux.png'}
 					percentage={65}
 				/>
 				<Skill
+					directionLeft={false}
 					img={'https://img.icons8.com/fluency/256/node-js.png'}
 					percentage={62}
 				/>
 				<Skill
+					directionLeft={false}
 					img={
 						'https://framerusercontent.com/images/48ha9ZR9oZQGQ6gZ8YUfElP3T0A.png'
 					}
