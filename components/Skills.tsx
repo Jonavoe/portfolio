@@ -48,7 +48,7 @@ export default function Skills({}: Props) {
 				<Skill
 					directionLeft={true}
 					img={'https://img.icons8.com/ios-glyphs/256/github.png'}
-					percentage={52}
+					percentage={80}
 				/>
 				<Skill
 					directionLeft={false}
