@@ -37,20 +37,14 @@ export default function About({}: Props) {
 				</h4>
 				<p className='text-base text-gray-400'>
 					Soy un desarrollador Front End Junior apasionado por la tecnología y
-					el diseño. Desde muy joven, siempre he sentido una gran curiosidad por
-					todo lo relacionado con la tecnología y cómo funciona. Me encanta
-					crear cosas nuevas y encontrar soluciones innovadoras para resolver
-					problemas. En el mundo de la tecnología, descubrí una pasión por el
-					desarrollo web, lo que me permitió unir mi pasión por la tecnología y
-					el diseño. Durante mi carrera como desarrollador Front End Junior, he
-					adquirido una amplia experiencia en el desarrollo de aplicaciones web
-					utilizando tecnologías como{' '}
+					el diseño. Tengo experiencia en el desarrollo de aplicaciones web
+					utilizando{' '}
 					<span className='underline decoration-[#F7AB0A]/50'>
-						JavaScript, React ,Next.js y Node.js
+						JavaScript, React, Next.js y Node.js
 					</span>
-					. Además, he trabajado en el diseño e implementación de bases de datos
-					utilizando SQL. Cada proyecto en el que he trabajado me ha brindado la
-					oportunidad de mejorar mis habilidades y aprender cosas nuevas.
+					, así como en la implementación de bases de datos con SQL. Me encanta
+					crear soluciones innovadoras y cada proyecto en el que he trabajado ha
+					mejorado mis habilidades y me ha enseñado cosas nuevas
 				</p>
 			</div>
 		</motion.div>
