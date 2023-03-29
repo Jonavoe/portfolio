@@ -36,10 +36,10 @@ export default function Hero({}: Props) {
 					<Link href='#about'>
 						<button className='heroButton shadow hover:shadow-[#F7AB0A]/50 '>About</button>
 					</Link>
-					<Link href='#experince'>
+					<Link href='#experience'>
 						<button className='heroButton shadow hover:shadow-[#F7AB0A]/50'>Experiencie</button>
 					</Link>
-					<Link href='#skils'>
+					<Link href='#skills'>
 						<button className='heroButton shadow hover:shadow-[#F7AB0A]/50'>Skills</button>
 					</Link>
 					<Link href='#projects'>
