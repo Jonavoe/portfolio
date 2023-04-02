@@ -30,7 +30,7 @@ export default function About({}: Props) {
 			<div className='space-y-10 px-0 md:px-10'>
 				<h4 className='text-4xl font-semibold text-gray-400'>
 					Hola soy {' '}
-					<span className='underline decoration-[#F7AB0A]/50'>
+					<span className='underline decoration-[#799ee6]/50'>
 						Jonathan
 					</span>
 					:
@@ -39,7 +39,7 @@ export default function About({}: Props) {
 					Soy un desarrollador Front End Junior apasionado por la tecnología y
 					el diseño. Tengo experiencia en el desarrollo de aplicaciones web
 					utilizando{' '}
-					<span className='underline decoration-[#F7AB0A]/50'>
+					<span className='underline decoration-[#799ee6]/50'>
 						JavaScript, React, Next.js y Node.js
 					</span>
 					, así como en la implementación de bases de datos con SQL. Me encanta

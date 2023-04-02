@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -8,15 +9,15 @@ function Projects({}: Props) {
 	const projects = [
 		{
 			title: 'Rick and Morty Fanpages',
-			img: 'https://user-images.githubusercontent.com/39503844/161444912-34721a29-dfc9-4c30-8025-730a93a2fb92.png',
+			img: 'https://i.postimg.cc/HxD3k8L7/project-1-rym.png',
 		},
 		{
 			title: '2',
-			img: 'https://user-images.githubusercontent.com/39503844/161444912-34721a29-dfc9-4c30-8025-730a93a2fb92.png',
+			img: 'https://i.postimg.cc/HxD3k8L7/project-1-rym.png',
 		},
 		{
 			title: '2',
-			img: 'https://user-images.githubusercontent.com/39503844/161444912-34721a29-dfc9-4c30-8025-730a93a2fb92.png',
+			img: 'https://i.postimg.cc/HxD3k8L7/project-1-rym.png',
 		},
 	];
 	return (
@@ -29,24 +30,29 @@ function Projects({}: Props) {
 				Projects
 			</h3>
 
-			<div className='relative w-full flex overflow-auto snap-x snap-mandatory z-20 mb-4 scrollbar'>
+			<div className='relative w-full flex overflow-auto snap-x snap-mandatory z-20 mb-4 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#799ee6]/80'>
 				{projects.map((project, key) => (
 					<div
 						key={key}
 						className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
-						<motion.img
-							initial={{ y: -100, opacity: 0 }}
-							whileInView={{ y: 0, opacity: 1 }}
-							transition={{ duration: 1.2 }}
-							src={project.img}
-							alt=''
-						/>
+						<Link
+							rel='stylesheet'
+							target='_blank'
+							href='https://proyecto-rick-and-morty-ixri3lzeh-jonavoe.vercel.app/'>
+							<motion.img
+								initial={{ y: -100, opacity: 0 }}
+								whileInView={{ y: 0, opacity: 1 }}
+								transition={{ duration: 1.2 }}
+								src={project.img}
+								alt=''
+							/>
+						</Link>
 
 						<div className='space-y-10 pc-0 md:px-10 max-w-6xl'>
 							<h4 className='text-2xl'>
 								<span
 									className='underline
-                             decoration-[#F7AB0A]/50'>
+                             decoration-[#799ee6]/50'>
 									{' '}
 									Project {key + 1} of {projects.length}
 								</span>
@@ -66,7 +72,7 @@ function Projects({}: Props) {
 				))}
 			</div>
 
-			<div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12'></div>
+			<div className='w-full absolute top-[30%] bg-[#799ee6]/10 left-0 h-[500px] -skew-y-12'></div>
 		</motion.div>
 	);
 }

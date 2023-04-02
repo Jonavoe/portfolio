@@ -13,12 +13,14 @@ export default function Hero({}: Props) {
 		delaySpeed: 2000,
 	});
 
+	
 	return (
 		<div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
 			<BackgroundCircles />
 			<img
 				className=' relative rounded-full h-32 w-32 mx-auto object-cover'
-				src='https://live.staticflickr.com/65535/52772764227_b573223194_z.jpg'
+				// src='https://live.staticflickr.com/65535/52772764227_b573223194_z.jpg'
+				src='https://live.staticflickr.com/65535/52786300693_d55aee5bfb.jpg'
 				alt='avatar'
 			/>
 			<div className='z-20'>
@@ -29,21 +31,21 @@ export default function Hero({}: Props) {
 					<span className='text-2xl uppercase text-gray-500 pb-2 tracking-[15px]'>
 						{text}
 					</span>
-					<Cursor cursorColor='#F7AB0A' />
+					<Cursor cursorColor='#799ee6' />
 				</h1>
 
 				<div className='pt-5'>
 					<Link href='#about'>
-						<button className='heroButton shadow hover:shadow-[#F7AB0A]/50 '>About</button>
+						<button className='heroButton shadow hover:shadow-[#799ee6]/50 '>About</button>
 					</Link>
 					<Link href='#experience'>
-						<button className='heroButton shadow hover:shadow-[#F7AB0A]/50'>Experiencie</button>
+						<button className='heroButton shadow hover:shadow-[#799ee6]/50'>Experiencie</button>
 					</Link>
 					<Link href='#skills'>
-						<button className='heroButton shadow hover:shadow-[#F7AB0A]/50'>Skills</button>
+						<button className='heroButton shadow hover:shadow-[#799ee6]/50'>Skills</button>
 					</Link>
 					<Link href='#projects'>
-						<button className='heroButton shadow hover:shadow-[#F7AB0A]/50'>
+						<button className='heroButton shadow hover:shadow-[#799ee6]/50'>
 							Projects
 						</button>
 					</Link>

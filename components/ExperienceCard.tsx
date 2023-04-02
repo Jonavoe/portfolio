@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+x/* eslint-disable @next/next/no-img-element */
 import { motion } from 'framer-motion';
 import React from 'react';
 
