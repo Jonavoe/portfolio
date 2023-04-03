@@ -15,7 +15,7 @@ type Props = {};
 function ContactMe({}: Props) {
 	const { register, handleSubmit } = useForm<Inputs>();
 	const onSubmit: SubmitHandler<Inputs> = (formData) => {
-		window.location.href = `mailto:voeffry.jonathan@gmail.com?subject=${formData.subject}&body=Hi, mi name is ${formData.name}. ${formData.message} (${formData.email})`;
+		window.location.href = `mailto:voeffray.jonathan@gmail.com?subject=${formData.subject}&body=Hi, mi name is ${formData.name}. ${formData.message} (${formData.email})`;
 	};
 
 	return (
@@ -23,13 +23,13 @@ function ContactMe({}: Props) {
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1.5 }}
-			className='h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-full px-10 justify-evenly mx-auto items-center'>
-			<h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+			className='h-screen flex relative flex-col text-center md:text-left max-w-full px-10 justify-evenly mx-auto items-center'>
+			<h3 className='mt-5 top-20 uppercase tracking-[20px] text-gray-500 text-2xl'>
 				Contact
 			</h3>
 
 			<div className='flex flex-col space-y-10 md:mt-10'>
-				<h4 className='text-4xl font-semibold text-center'>
+				<h4 className='text-2xl md:text-4xl font-semibold text-center'>
 					Desarrollador Front End Junior especializado en React{' '}
 					<span className='underline decoration-[#799ee6]/50'>
 						Trabajemos juntos!
@@ -37,26 +37,26 @@ function ContactMe({}: Props) {
 				</h4>
 			</div>
 
-			<div className='space-y-10'>
-				<div className='flex items-center space-x-5 justify-center'>
-					<PhoneIcon className='text-[#799ee6] h-7 w-7 animate-pulse' />
+			<div className='space-y-5'>
+				<div className='flex items-center space-x-3 justify-center'>
+					<PhoneIcon className='text-[#799ee6] h-5 w-5 animate-pulse' />
 					<p className='text-2xl:'>+543487229328</p>
 				</div>
 
-				<div className='flex items-center space-x-5 justify-center'>
-					<EnvelopeIcon className='text-[#799ee6] h-7 w-7 animate-pulse' />
+				<div className='flex items-center space-x-3 justify-center'>
+					<EnvelopeIcon className='text-[#799ee6] h-5 w-5 animate-pulse' />
 					<p className='text-2xl:'>voeffray.jonathan@gmail.com</p>
 				</div>
 
-				<div className='flex items-center space-x-5 justify-center'>
-					<MapPinIcon className='text-[#799ee6] h-7 w-7 animate-pulse' />
+				<div className='flex items-center space-x-3 justify-center'>
+					<MapPinIcon className='text-[#799ee6] h-5 w-5 animate-pulse' />
 					<p className='text-2xl:'>Concepcion del Uruguay, Entre Rios</p>
 				</div>
 
 				<form
 					onSubmit={handleSubmit(onSubmit)}
-					className='flex flex-col space-y-2 w-fit mx-auto'>
-					<div className='flex space-x-2'>
+					className='flex flex-col space-y-1 w-fit mx-auto'>
+					<div className='flex flex-col md:flex-row md:space-x-2 space-y-1 md:space-y-0'>
 						<input
 							{...register('name')}
 							placeholder='Name'
@@ -86,7 +86,7 @@ function ContactMe({}: Props) {
 
 					<button
 						type='submit'
-						className='bg-[#799ee6] py-5 px-10 rounded-md text-black font-bold text-lg'>
+						className='bg-[#799ee6] py-2 px-10 rounded-md text-black font-bold text-lg'>
 						Submit
 					</button>
 				</form>

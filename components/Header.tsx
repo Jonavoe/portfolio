@@ -62,7 +62,7 @@ function Header({}: Props) {
 					bgColor='transparent'
 				/>
 				<Link href='#contactme'>
-					<p className='uppercase hidden md:inline-flex'>Get In Touch</p>
+					<p className='uppercase'>Get In Touch</p>
 				</Link>
 			</motion.div>
 		</header>

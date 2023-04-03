@@ -30,7 +30,7 @@ function Projects({}: Props) {
 				Projects
 			</h3>
 
-			<div className='relative w-full flex overflow-auto snap-x snap-mandatory z-20 mb-4 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#799ee6]/80'>
+			<div className='relative w-full flex overflow-auto snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#799ee6]/80'>
 				{projects.map((project, key) => (
 					<div
 						key={key}
@@ -59,13 +59,11 @@ function Projects({}: Props) {
 								: {project.title}
 							</h4>
 
-							<p className='text-lg text-center md:text-left'>
+							<p className='text-1xl md:text-2xl text-center md:text-left'>
 								La aplicación de Rick and Morty es una herramienta diseñada para
 								los fans de la serie de televisión que les permite buscar
 								personajes por ID, mostrar personajes aleatorios, agregar
-								personajes a favoritos y ordenarlos y filtrarlos por género. Es
-								una forma fácil y divertida de explorar y conocer más sobre los
-								personajes y la historia detrás de la serie.
+								personajes a favoritos y ordenarlos y filtrarlos por género.
 							</p>
 						</div>
 					</div>
