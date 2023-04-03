@@ -8,12 +8,21 @@ type Props = {};
 
 export default function Hero({}: Props) {
 	const [text, count] = useTypewriter({
-		words: ['Front-End Developer'],
+		words: ['Front-End'],
+		typeSpeed: 150,
+		deleteSpeed: 25,
 		loop: true,
 		delaySpeed: 2000,
 	});
 
-	
+	const [text2, count2] = useTypewriter({
+		words: ['Developer'],
+		typeSpeed: 150,
+		deleteSpeed: 25,
+		loop: true,
+		delaySpeed: 2000,
+	});
+
 	return (
 		<div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
 			<BackgroundCircles />
@@ -27,22 +36,36 @@ export default function Hero({}: Props) {
 				<h2 className='text-3xl uppercase text-gray-500 pb-2 tracking-[15px]'>
 					Jonathan Voeffray
 				</h2>
-				<h1>
-					<span className='text-2xl uppercase text-gray-500 pb-2 tracking-[15px]'>
-						{text}
-					</span>
-					<Cursor cursorColor='#799ee6' />
-				</h1>
+				<div className='flex flex-col justify-center items-center'>
+					<div className='flex'>
+						<p className='text-2xl uppercase text-gray-500 pb-2 tracking-[15px]'>
+							{text}
+						</p>
+						<Cursor cursorColor='#799ee6' />
+					</div>
+					<div className='flex'>
+						<p className='text-2xl uppercase text-gray-500 pb-2 tracking-[15px]'>
+							{text2}
+						</p>
+						<Cursor cursorColor='#799ee6' />
+					</div>
+				</div>
 
 				<div className='pt-5'>
 					<Link href='#about'>
-						<button className='heroButton shadow hover:shadow-[#799ee6]/50 '>About</button>
+						<button className='heroButton shadow hover:shadow-[#799ee6]/50 '>
+							About
+						</button>
 					</Link>
 					<Link href='#experience'>
-						<button className='heroButton shadow hover:shadow-[#799ee6]/50'>Experiencie</button>
+						<button className='heroButton shadow hover:shadow-[#799ee6]/50'>
+							Experiencie
+						</button>
 					</Link>
 					<Link href='#skills'>
-						<button className='heroButton shadow hover:shadow-[#799ee6]/50'>Skills</button>
+						<button className='heroButton shadow hover:shadow-[#799ee6]/50'>
+							Skills
+						</button>
 					</Link>
 					<Link href='#projects'>
 						<button className='heroButton shadow hover:shadow-[#799ee6]/50'>
