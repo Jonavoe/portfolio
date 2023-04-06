@@ -7,10 +7,7 @@ type Props = {};
 
 export default function About({}: Props) {
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			whileInView={{ opacity: 1 }}
-			transition={{ duration: 1.5 }}
+		<div
 			className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
 			<h3 className='absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl'>
 				About
@@ -47,6 +44,6 @@ export default function About({}: Props) {
 					mejorado mis habilidades y me ha enseñado cosas nuevas
 				</p>
 			</div>
-		</motion.div>
+		</div>
 	);
 }

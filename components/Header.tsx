@@ -28,16 +28,19 @@ function Header({}: Props) {
 					url='https://linkedin.com/in/voeffray-jonathan/'
 					fgColor='gray'
 					bgColor='transparent'
+					target='_blank'
 				/>
 				<SocialIcon
 					url='https://github.com/Jonavoe'
 					fgColor='gray'
 					bgColor='transparent'
+					target='_blank'
 				/>
 				<SocialIcon
 					url='https://twitter.com/VoeffrayJona'
 					fgColor='gray'
 					bgColor='transparent'
+					target='_blank'
 				/>
 			</motion.div>
 			<motion.div
@@ -60,6 +63,7 @@ function Header({}: Props) {
 					network='email'
 					fgColor='gray'
 					bgColor='transparent'
+					target='_blank'
 				/>
 				<Link href='#contactme'>
 					<p className='uppercase'>Get In Touch</p>

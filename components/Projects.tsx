@@ -2,22 +2,32 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { SocialIcon } from 'react-social-icons';
 
 type Props = {};
 
 function Projects({}: Props) {
 	const projects = [
 		{
+			title: 'eCommerce Gamer',
+			img: 'https://i.postimg.cc/ZKQvpRDY/project-2-ecommerce.png',
+			text: 'La aplicación de eCommerce ofrece una experiencia de compra fácil y agradable. Los usuarios pueden agregar productos al carrito y filtrarlos por tipo. La aplicación fue desarrollada con tecnologías modernas como React y sus librerias. Es una herramienta esencial para los compradores en línea.',
+			github: 'https://github.com/Jonavoe/Proyecto-rick-and-morty',
+			vercel: 'https://ecommerce-swart-sigma.vercel.app',
+		},
+		{
 			title: 'Rick and Morty Fanpages',
 			img: 'https://i.postimg.cc/HxD3k8L7/project-1-rym.png',
+			text: 'La app de Rick and Morty es ideal para los fans de la serie, ya que les permite buscar por ID y seleccionar aleatoriamente personajes. También ofrece una función de favoritos y diferentes filtros para personalizar la experiencia de búsqueda. La interfaz es moderna y fácil de usar, gracias a la utilización de tecnologías avanzadas como React, Redux, Axios, HTML y CSS.',
+			github: 'https://github.com/Jonavoe/Proyecto-rick-and-morty',
+			vercel: 'https://rick-and-morty-jonavoe.vercel.app',
 		},
 		{
-			title: '2',
-			img: 'https://i.postimg.cc/HxD3k8L7/project-1-rym.png',
-		},
-		{
-			title: '2',
-			img: 'https://i.postimg.cc/HxD3k8L7/project-1-rym.png',
+			title: 'Buscador de Imagenes',
+			img: 'https://i.postimg.cc/jSJwXbGH/project-3-pixabai.png',
+			text: 'App de búsqueda de imágenes con la API de Pixabay. Interfaz intuitiva y adaptable. Desarrollada con HTML, CSS, React y Bootstrap. Perfecta para proyectos que requieran imágenes de alta calidad.',
+			github: 'https://github.com/Jonavoe/searchImagesPixabai',
+			vercel: 'https://search-images-pixabai.vercel.app/',
 		},
 	];
 	return (
@@ -40,6 +50,7 @@ function Projects({}: Props) {
 							target='_blank'
 							href='https://proyecto-rick-and-morty-ixri3lzeh-jonavoe.vercel.app/'>
 							<motion.img
+								className='mt-5'
 								initial={{ y: -100, opacity: 0 }}
 								whileInView={{ y: 0, opacity: 1 }}
 								transition={{ duration: 1.2 }}
@@ -48,23 +59,30 @@ function Projects({}: Props) {
 							/>
 						</Link>
 
-						<div className='space-y-10 pc-0 md:px-10 max-w-6xl'>
-							<h4 className='text-2xl'>
-								<span
-									className='underline
-                             decoration-[#799ee6]/50'>
-									{' '}
-									Project {key + 1} of {projects.length}
-								</span>
-								: {project.title}
-							</h4>
+						<div className='space-y-2 pc-0 md:px-10 max-w-6xl'>
+							<div className='flex items-center justify-center'>
+								<h4 className='text-2xl'>
+									<span className='underline decoration-[#799ee6]/50'>
+										{' '}
+										Project {key + 1} of {projects.length}
+									</span>
+									: {project.title}
+								</h4>
+								<div className='flex flex-col md:flex-row items-center justify-center'>
+									<SocialIcon
+										style={{ width: '60px', height: '60px' }}
+										url={project.github}
+										target='_blank'
+										fgColor='gray'
+										bgColor='transparent'
+									/>
+									<Link target='_blank' href={project.vercel}>
+										<img style={{color: 'gray', background: 'transparent', width: '2.2rem'}} src='https://i.postimg.cc/JhbNrV1c/vercel.png' alt='logo vercel'/>
+									</Link>
+								</div>
+							</div>
 
-							<p className='text-1xl md:text-2xl text-center md:text-left'>
-								La aplicación de Rick and Morty es una herramienta diseñada para
-								los fans de la serie de televisión que les permite buscar
-								personajes por ID, mostrar personajes aleatorios, agregar
-								personajes a favoritos y ordenarlos y filtrarlos por género.
-							</p>
+							<p className='text-1xl md:text-2xl text-left'>{project.text}</p>
 						</div>
 					</div>
 				))}
