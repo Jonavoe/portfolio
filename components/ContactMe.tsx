@@ -29,7 +29,7 @@ function ContactMe({}: Props) {
 			</h3>
 
 			<div className='flex flex-col space-y-2 items-center justify-center'>
-				<h4 className='text-1xl md:text-4xl font-semibold text-center'>
+				<h4 className='text-1xl md:text-4xl my-5 font-semibold text-center'>
 					Desarrollador Full Stack {' '}
 					<span className='underline decoration-[#799ee6]/50'>
 						Trabajemos juntos!
@@ -39,17 +39,17 @@ function ContactMe({}: Props) {
 
 			<div className='space-y-2'>
 				<div className='flex items-center space-x-2 justify-start'>
-					<PhoneIcon className='text-[#799ee6] h-5 w-5 animate-pulse' />
+					<PhoneIcon className='text-[#799ee6] my-1 h-5 w-5 animate-pulse' />
 					<p className='text-2xl:'>+543487229328</p>
 				</div>
 
 				<div className='flex items-center space-x-2 justify-start'>
-					<EnvelopeIcon className='text-[#799ee6] h-5 w-5 animate-pulse' />
+					<EnvelopeIcon className='text-[#799ee6]  my-1 h-5 w-5 animate-pulse' />
 					<p className='text-2xl:'>voeffray.jonathan@gmail.com</p>
 				</div>
 
 				<div className='flex items-center space-x-2 justify-start'>
-					<MapPinIcon className='text-[#799ee6] h-5 w-5 animate-pulse' />
+					<MapPinIcon className='text-[#799ee6] my-1 h-5 w-5 animate-pulse' />
 					<p className='text-2xl:'>Concepcion del Uruguay, Entre Rios</p>
 				</div>
 
