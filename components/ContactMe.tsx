@@ -38,24 +38,24 @@ function ContactMe({}: Props) {
 			</div>
 
 			<div className='space-y-2'>
-				<div className='flex items-center space-x-2 justify-center'>
+				<div className='flex items-center space-x-2 justify-start'>
 					<PhoneIcon className='text-[#799ee6] h-5 w-5 animate-pulse' />
 					<p className='text-2xl:'>+543487229328</p>
 				</div>
 
-				<div className='flex items-center space-x-2 justify-center'>
+				<div className='flex items-center space-x-2 justify-start'>
 					<EnvelopeIcon className='text-[#799ee6] h-5 w-5 animate-pulse' />
 					<p className='text-2xl:'>voeffray.jonathan@gmail.com</p>
 				</div>
 
-				<div className='flex items-center space-x-2 justify-center'>
+				<div className='flex items-center space-x-2 justify-start'>
 					<MapPinIcon className='text-[#799ee6] h-5 w-5 animate-pulse' />
 					<p className='text-2xl:'>Concepcion del Uruguay, Entre Rios</p>
 				</div>
 
 				<form
 					onSubmit={handleSubmit(onSubmit)}
-					className='flex flex-col space-y-1 w-fit mx-auto'>
+					className='flex flex-col space-y-2 w-fit mx-auto'>
 					<div className='flex flex-col md:flex-row md:space-x-2 space-y-1 md:space-y-0'>
 						<input
 							{...register('name')}
@@ -86,7 +86,7 @@ function ContactMe({}: Props) {
 
 					<button
 						type='submit'
-						className='bg-[#799ee6] py-2 px-10 rounded-md text-black font-bold text-lg'>
+						className='bg-[#799ee6] hover:bg-[#7191ef] py-2 px-10 rounded-md text-black font-bold text-lg'>
 						Submit
 					</button>
 				</form>
