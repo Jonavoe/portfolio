@@ -24,10 +24,10 @@ export default function Hero({}: Props) {
 	});
 
 	return (
-		<div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+		<div className='h-screen flex flex-col space-y-4 items-center justify-center text-center overflow-hidden'>
 			<BackgroundCircles />
 			<img
-				className=' relative rounded-full h-32 w-32 mx-auto object-cover'
+				className=' relative rounded-full h-28 w-28 md:h-40 md:w-40 mx-auto object-cover'
 				// src='https://live.staticflickr.com/65535/52772764227_b573223194_z.jpg'
 				src='https://live.staticflickr.com/65535/52786300693_d55aee5bfb.jpg'
 				alt='avatar'

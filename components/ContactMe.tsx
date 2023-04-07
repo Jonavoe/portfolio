@@ -28,27 +28,27 @@ function ContactMe({}: Props) {
 				Contact
 			</h3>
 
-			<div className='flex flex-col space-y-10 md:mt-10'>
-				<h4 className='text-2xl md:text-4xl font-semibold text-center'>
-					Desarrollador Front End Junior especializado en React{' '}
+			<div className='flex flex-col space-y-2 items-center justify-center'>
+				<h4 className='text-1xl md:text-4xl font-semibold text-center'>
+					Desarrollador Full Stack {' '}
 					<span className='underline decoration-[#799ee6]/50'>
 						Trabajemos juntos!
 					</span>
 				</h4>
 			</div>
 
-			<div className='space-y-5'>
-				<div className='flex items-center space-x-3 justify-center'>
+			<div className='space-y-2'>
+				<div className='flex items-center space-x-2 justify-center'>
 					<PhoneIcon className='text-[#799ee6] h-5 w-5 animate-pulse' />
 					<p className='text-2xl:'>+543487229328</p>
 				</div>
 
-				<div className='flex items-center space-x-3 justify-center'>
+				<div className='flex items-center space-x-2 justify-center'>
 					<EnvelopeIcon className='text-[#799ee6] h-5 w-5 animate-pulse' />
 					<p className='text-2xl:'>voeffray.jonathan@gmail.com</p>
 				</div>
 
-				<div className='flex items-center space-x-3 justify-center'>
+				<div className='flex items-center space-x-2 justify-center'>
 					<MapPinIcon className='text-[#799ee6] h-5 w-5 animate-pulse' />
 					<p className='text-2xl:'>Concepcion del Uruguay, Entre Rios</p>
 				</div>

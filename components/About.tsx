@@ -21,7 +21,7 @@ export default function About({}: Props) {
 				whileInView={{ x: 0, opacity: 1 }}
 				transition={{ duration: 1.2 }}
 				src='https://live.staticflickr.com/65535/52774866720_bd2203d612_z.jpg'
-				className='mt-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-80 md:h-80 xl:w-[600px] xl:h-[600px]'
+				className='mt-20 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-80 md:h-80 xl:w-[600px] xl:h-[600px]'
 			/>
 
 			<div className='space-y-10 px-0 md:px-10'>
@@ -32,7 +32,7 @@ export default function About({}: Props) {
 					</span>
 					:
 				</h4>
-				<p className='text-base text-gray-400'>
+				<p className='text-base text-left text-gray-400'>
 					Soy un desarrollador Front End Junior apasionado por la tecnología y
 					el diseño. Tengo experiencia en el desarrollo de aplicaciones web
 					utilizando{' '}

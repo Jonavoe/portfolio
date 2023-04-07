@@ -61,7 +61,7 @@ function Projects({}: Props) {
 
 						<div className='space-y-2 pc-0 md:px-10 max-w-6xl'>
 							<div className='flex items-center justify-center'>
-								<h4 className='text-2xl'>
+								<h4 className='text-lg md:text-2xl'>
 									<span className='underline decoration-[#799ee6]/50'>
 										{' '}
 										Project {key + 1} of {projects.length}
@@ -82,7 +82,7 @@ function Projects({}: Props) {
 								</div>
 							</div>
 
-							<p className='text-1xl md:text-2xl text-left'>{project.text}</p>
+							<p className='text-sm md:text-2xl text-left'>{project.text}</p>
 						</div>
 					</div>
 				))}
