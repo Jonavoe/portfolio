@@ -23,8 +23,8 @@ function ContactMe({}: Props) {
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1.5 }}
-			className='h-screen flex relative flex-col text-center md:text-left max-w-full px-10 justify-evenly mx-auto items-center'>
-			<h3 className='mt-5 top-20 uppercase tracking-[20px] text-gray-500 text-2xl'>
+			className='h-screen flex relative flex-col text-center md:text-left max-w-full px-10 justify-center mx-auto items-center'>
+			<h3 className='absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl'>
 				Contact
 			</h3>
 
