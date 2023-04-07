@@ -76,8 +76,18 @@ function Projects({}: Props) {
 										fgColor='gray'
 										bgColor='transparent'
 									/>
-									<Link target='_blank' href={project.vercel}>
-										<img style={{color: 'gray', background: 'transparent', width: '2.2rem'}} src='https://i.postimg.cc/JhbNrV1c/vercel.png' alt='logo vercel'/>
+									<Link
+										target='_blank'
+										href={project.vercel}>
+										<img
+											style={{
+												color: 'gray',
+												background: 'transparent',
+												width: '2.2rem',
+											}}
+											src='https://i.postimg.cc/JhbNrV1c/vercel.png'
+											alt='logo vercel'
+										/>
 									</Link>
 								</div>
 							</div>
