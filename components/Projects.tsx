@@ -6,7 +6,7 @@ import { SocialIcon } from 'react-social-icons';
 
 type Props = {};
 
-function Projects({}: Props) {
+function Projects({ }: Props) {
 	const projects = [
 		{
 			title: 'eCommerce Gamer',
@@ -18,7 +18,7 @@ function Projects({}: Props) {
 		{
 			title: 'Rick and Morty Fanpages',
 			img: 'https://i.postimg.cc/HxD3k8L7/project-1-rym.png',
-			text: 'La app de Rick and Morty es ideal para los fans de la serie, ya que les permite buscar por ID y seleccionar aleatoriamente personajes. También ofrece una función de favoritos y diferentes filtros para personalizar la experiencia de búsqueda. La interfaz es moderna y fácil de usar, gracias a la utilización de tecnologías avanzadas como React, Redux, Axios, HTML y CSS.',
+			text: 'La app de Rick and Morty permite buscar personajes por ID, seleccionar aleatoriamente, tener favoritos y filtros. La interfaz es moderna y fácil de usar con tecnologías avanzadas como React, Redux, Axios, HTML y CSS.',
 			github: 'https://github.com/Jonavoe/Proyecto-rick-and-morty',
 			vercel: 'https://rick-and-morty-jonavoe.vercel.app',
 		},
@@ -40,7 +40,7 @@ function Projects({}: Props) {
 				Projects
 			</h3>
 
-			<div className='relative w-full flex overflow-auto snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#799ee6]/80'>
+			<div className='relative w-full flex overflow-auto snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-w-px scrollbar-thumb-[#799ee6]/80 top-[-10px]'>
 				{projects.map((project, key) => (
 					<div
 						key={key}
