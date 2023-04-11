@@ -12,8 +12,8 @@ function Projects({ }: Props) {
 			title: 'eCommerce Gamer',
 			img: 'https://i.postimg.cc/ZKQvpRDY/project-2-ecommerce.png',
 			text: 'La aplicación de eCommerce ofrece una experiencia de compra fácil y agradable. Los usuarios pueden agregar productos al carrito y filtrarlos por tipo. La aplicación fue desarrollada con tecnologías modernas como React y sus librerias. Es una herramienta esencial para los compradores en línea.',
-			github: 'https://github.com/Jonavoe/Proyecto-rick-and-morty',
-			vercel: 'https://ecommerce-swart-sigma.vercel.app',
+			github: 'https://github.com/Jonavoe/ecommerce',
+			vercel: 'https://ecommerce-jonavoe.vercel.app/',
 		},
 		{
 			title: 'Rick and Morty Fanpages',
