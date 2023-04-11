@@ -48,7 +48,7 @@ function Projects({ }: Props) {
 						<Link
 							rel='stylesheet'
 							target='_blank'
-							href='https://proyecto-rick-and-morty-ixri3lzeh-jonavoe.vercel.app/'>
+							href={project.vercel}>
 							<motion.img
 								className='mt-5'
 								initial={{ y: -100, opacity: 0 }}
