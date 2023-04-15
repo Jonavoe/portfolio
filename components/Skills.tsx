@@ -23,12 +23,12 @@ export default function Skills({}: Props) {
 				<Skill
 					directionLeft={true}
 					img={'https://img.icons8.com/fluency/256/javascript.png'}
-					percentage={63}
+					percentage={73}
 				/>
 				<Skill
 					directionLeft={true}
 					img={'https://img.icons8.com/officel/256/react.png'}
-					percentage={64}
+					percentage={74}
 				/>
 				<Skill
 					directionLeft={true}
@@ -43,12 +43,12 @@ export default function Skills({}: Props) {
 				<Skill
 					directionLeft={true}
 					img={'https://img.icons8.com/fluency/256/visual-studio-code-2019.png'}
-					percentage={80}
+					percentage={85}
 				/>
 				<Skill
 					directionLeft={true}
 					img={'https://img.icons8.com/ios-glyphs/256/github.png'}
-					percentage={80}
+					percentage={85}
 				/>
 				<Skill
 					directionLeft={false}
@@ -58,29 +58,29 @@ export default function Skills({}: Props) {
 				<Skill
 					directionLeft={false}
 					img={'https://img.icons8.com/color/256/postgreesql.png'}
-					percentage={62}
+					percentage={77}
 				/>
 				<Skill
 					directionLeft={false}
 					img={'https://img.icons8.com/nolan/256/express-js.png'}
-					percentage={60}
+					percentage={73}
 				/>
 				<Skill
 					directionLeft={false}
 					img={'https://img.icons8.com/color/256/redux.png'}
-					percentage={65}
+					percentage={73}
 				/>
 				<Skill
 					directionLeft={false}
 					img={'https://img.icons8.com/fluency/256/node-js.png'}
-					percentage={62}
+					percentage={75}
 				/>
 				<Skill
 					directionLeft={false}
 					img={
 						'https://framerusercontent.com/images/48ha9ZR9oZQGQ6gZ8YUfElP3T0A.png'
 					}
-					percentage={60}
+					percentage={76}
 				/>
 			</div>
 		</motion.div>

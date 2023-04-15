@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 type Props = {};
 
-function Header({}: Props) {
+function Header({ }: Props) {
 	return (
 		<header className='sticky top-0 flex items-start justify-between max-w-7xl mx-auto p-5 z-20 xl:items-center'>
 			<motion.div
@@ -58,6 +58,11 @@ function Header({}: Props) {
 					duration: 1.5,
 				}}
 				className='flex flex-row items-center text-gray-300 cursor-pointer'>
+					
+				<Link target='_blank' href='https://drive.google.com/file/d/1a_fYzcMYrvag8W68XC5pk8TGfklchPD_/view?usp=sharing'>
+					<p className='uppercase'>View my CV</p>
+				</Link>
+				
 				<SocialIcon
 					className='cursor-pointer'
 					network='email'
