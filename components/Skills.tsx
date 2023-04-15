@@ -19,7 +19,7 @@ export default function Skills({}: Props) {
 				Hover over a skill for currency proficiency
 			</h3>
 
-			<div className='grid grid-cols-3 gap-5'>
+			<div className='grid grid-cols-3 gap-5 mt-20 md:mt-0'>
 				<Skill
 					directionLeft={true}
 					img={'https://img.icons8.com/fluency/256/javascript.png'}
