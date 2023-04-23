@@ -9,9 +9,9 @@ type Props = {};
 function Projects({ }: Props) {
 	const projects = [
 		{
-			title: 'eCommerce Gamer',
+			title: 'Actived Planet',
 			img: 'https://i.postimg.cc/t47zhChS/Project-pi.png',
-			text: 'La aplicación de eCommerce ofrece una experiencia de compra fácil y agradable. Los usuarios pueden agregar productos al carrito y filtrarlos por tipo. La aplicación fue desarrollada con tecnologías modernas como React y sus librerias. Es una herramienta esencial para los compradores en línea.',
+			text: 'Explore los países del mundo es una aplicación web que te permite descubrir información interesante sobre diferentes países y planificar actividades turísticas. Desarrollado en React y Redux, esta aplicación utiliza una base de datos en PostgreSQL y Sequelize como ORM',
 			github: 'https://github.com/Jonavoe/PI-Countries-main',
 			vercel: 'https://pi-countries-main-957anir8s-jonavoe.vercel.app/',
 		},
