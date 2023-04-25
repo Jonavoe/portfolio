@@ -8,13 +8,13 @@ type Props = {};
 
 function Projects({ }: Props) {
 	const projects = [
-		{
-			title: 'Actived Planet',
-			img: 'https://i.postimg.cc/t47zhChS/Project-pi.png',
-			text: 'Explore los países del mundo es una aplicación web que te permite descubrir información interesante sobre diferentes países y planificar actividades turísticas. Desarrollado en React y Redux, esta aplicación utiliza una base de datos en PostgreSQL y Sequelize como ORM',
-			github: 'https://github.com/Jonavoe/PI-Countries-main',
-			vercel: 'https://pi-countries-main-green.vercel.app/home',
-		},
+		// {
+		// 	title: 'Actived Planet',
+		// 	img: 'https://i.postimg.cc/t47zhChS/Project-pi.png',
+		// 	text: 'Explore los países del mundo es una aplicación web que te permite descubrir información interesante sobre diferentes países y planificar actividades turísticas. Desarrollado en React y Redux, esta aplicación utiliza una base de datos en PostgreSQL y Sequelize como ORM',
+		// 	github: 'https://github.com/Jonavoe/PI-Countries-main',
+		// 	vercel: 'https://pi-countries-main-green.vercel.app/',
+		// },
 		{
 			title: 'eCommerce Gamer',
 			img: 'https://i.postimg.cc/ZKQvpRDY/project-2-ecommerce.png',
