@@ -6,9 +6,9 @@ import BackgroundCircles from './BackgroundCircles';
 
 type Props = {};
 
-export default function Hero({}: Props) {
+export default function Hero({ }: Props) {
 	const [text, count] = useTypewriter({
-		words: ['Front-End'],
+		words: ['Full-Stack'],
 		typeSpeed: 150,
 		deleteSpeed: 50,
 		loop: true,
