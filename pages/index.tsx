@@ -10,6 +10,7 @@ import Projects from '@/components/Projects';
 import ContactMe from '@/components/ContactMe';
 import { ArrowLongUpIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
+import Script from 'next/script';
 
 export default function Home() {
 	return (
@@ -67,6 +68,27 @@ export default function Home() {
 					<ArrowLongUpIcon className='h-7 w-7 rounded-full filter border border-[#343434] hover:border-[#799ee6] grayscale hover:grayscale-0 transition-all' />
 				</Link>
 			</div>
+
+			<Script
+				src={`https://www.googletagmanager.com/gtag/js?id=G-42H3Q271T7`}
+				strategy="afterInteractive"
+			/>
+			<Script
+				id="ga-script"
+				strategy="afterInteractive"
+				dangerouslySetInnerHTML={{
+					__html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-42H3Q271T7', {
+        page_path: window.location.pathname,
+      });
+    `,
+				}}
+			/>
+
+
 		</div>
 	);
 }
