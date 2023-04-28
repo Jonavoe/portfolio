@@ -70,7 +70,7 @@ export default function Home() {
 			</div>
 
 			<Script
-				src={`https://www.googletagmanager.com/gtag/js?id=G-YFGWCBFBZG`}
+				src={`https://www.googletagmanager.com/gtag/js?id=G-42H3Q271T7`}
 				strategy="afterInteractive"
 			/>
 			<Script
@@ -81,7 +81,7 @@ export default function Home() {
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-YFGWCBFBZG', {
+      gtag('config', 'G-42H3Q271T7', {
         page_path: window.location.pathname,
       });
     `,
