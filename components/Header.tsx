@@ -57,22 +57,24 @@ function Header({ }: Props) {
 				transition={{
 					duration: 1.5,
 				}}
-				className='flex flex-row items-center text-gray-300 cursor-pointer'>
-					
+				className='flex flex-row space-x-5 items-center text-gray-300 cursor-pointer'>
+
 				<Link target='_blank' href='https://drive.google.com/file/d/1a_fYzcMYrvag8W68XC5pk8TGfklchPD_/view?usp=sharing'>
-					<p className='uppercase'>View my CV</p>
+					<p className='uppercase s'>CV</p>
 				</Link>
-				
-				<SocialIcon
-					className='cursor-pointer'
-					network='email'
-					fgColor='gray'
-					bgColor='transparent'
-					target='_blank'
-				/>
-				<Link href='#contactme'>
-					<p className='uppercase'>Get In Touch</p>
-				</Link>
+
+				<div className='flex items-center'>
+					<Link href='#contactme' >
+						<p className='uppercase'>Contacto</p>
+					</Link>
+					<SocialIcon
+						className='cursor-pointer'
+						network='email'
+						fgColor='gray'
+						bgColor='transparent'
+						target='_blank'
+					/>
+				</div>
 			</motion.div>
 		</header>
 	);

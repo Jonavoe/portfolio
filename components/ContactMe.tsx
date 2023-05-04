@@ -25,7 +25,7 @@ function ContactMe({}: Props) {
 			transition={{ duration: 1.5 }}
 			className='h-screen flex relative flex-col text-center md:text-left max-w-full px-10 justify-center mx-auto items-center'>
 			<h3 className='absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl'>
-				Contact
+				Contacto
 			</h3>
 
 			<div className='flex flex-col space-y-2 items-center justify-center'>
@@ -59,7 +59,7 @@ function ContactMe({}: Props) {
 					<div className='flex flex-col md:flex-row md:space-x-2 space-y-1 md:space-y-0'>
 						<input
 							{...register('name')}
-							placeholder='Name'
+							placeholder='Nombre'
 							className='contactInput'
 							type='text'
 						/>
@@ -75,7 +75,7 @@ function ContactMe({}: Props) {
 						{...register('subject')}
 						className='contactInput'
 						type='text'
-						placeholder='Subject'
+						placeholder='Asunto'
 					/>
 
 					<textarea
@@ -87,7 +87,7 @@ function ContactMe({}: Props) {
 					<button
 						type='submit'
 						className='bg-[#799ee6] hover:bg-[#7191ef] py-2 px-10 rounded-md text-black font-bold text-lg'>
-						Submit
+						Enviar
 					</button>
 				</form>
 			</div>

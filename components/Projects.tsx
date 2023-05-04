@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { SocialIcon } from 'react-social-icons';
@@ -7,6 +7,8 @@ import { SocialIcon } from 'react-social-icons';
 type Props = {};
 
 function Projects({ }: Props) {
+	const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+
 	const projects = [
 		{
 			title: 'Actived Planet',
@@ -37,72 +39,92 @@ function Projects({ }: Props) {
 			vercel: 'https://search-images-pixabai.vercel.app/',
 		},
 	];
+
+
+	const goToNextProject = () => {
+		setCurrentProjectIndex((currentProjectIndex + 1) % projects.length);
+	};
+
+	const goToPreviousProject = () => {
+		setCurrentProjectIndex(
+			(currentProjectIndex - 1 + projects.length) % projects.length
+		);
+	};
+
+	const currentProject = projects[currentProjectIndex];
+
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1.5 }}
-			className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
+			className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-center mx-auto items-center z-0'>
 			<h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
-				Projects
+				Proyectos
 			</h3>
 
-			<div className='relative w-full flex overflow-auto snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-w-px scrollbar-thumb-[#799ee6]/80 top-[-10px]'>
-				{projects.map((project, key) => (
-					<div
-						key={key}
-						className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
-						<Link className='mt-10 md:mt-0'
-							rel='stylesheet'
-							target='_blank'
-							href={project.vercel}>
-							<motion.img
-								className='mt-5'
-								initial={{ y: -100, opacity: 0 }}
-								whileInView={{ y: 0, opacity: 1 }}
-								transition={{ duration: 1.2 }}
-								src={project.img}
-								alt=''
-							/>
-						</Link>
+			<div className='relative w-full flex justify-center items-center'>
+				<button
+					className='absolute top-1/2 text-5xl lg:text-9xl ml-5 md:ml-10 text transform -translate-y-1/2 left-0 text-gray-500 hover:text-gray-800 z-50'
+					onClick={goToPreviousProject}
+				>
+					&#8249;
+				</button>
 
-						<div className='space-y-2 pc-0 md:px-10 max-w-6xl'>
-							<div className='flex items-center justify-center'>
-								<h4 className='text-lg md:text-2xl'>
-									<span className='underline decoration-[#799ee6]/50'>
-										{' '}
-										Project {key + 1} of {projects.length}
-									</span>
-									: {project.title}
-								</h4>
-								<div className='flex flex-col md:flex-row items-center justify-center'>
-									<SocialIcon
-										style={{ width: '60px', height: '60px' }}
-										url={project.github}
-										target='_blank'
-										fgColor='gray'
-										bgColor='transparent'
+				<button
+					className='absolute text-5xl lg:text-9xl mr-5 md:mr-10 top-1/2 transform -translate-y-1/2 right-0 text-gray-500 hover:text-gray-800 z-50'
+					onClick={goToNextProject}
+				>
+					&#8250;
+				</button>
+				<div
+					className={`w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center p-20 md:p-44 h-screen`}
+				>
+					<div className='space-y-2 pc-0 md:px-10 max-w-6xl'>
+						<div className='flex flex-col items-center justify-center'>
+							<h4 className='text-5xl mt-0 md:mt-40'>
+								{currentProject.title}
+							</h4>
+							<div className='flex flex-row items-center justify-center'>
+								<SocialIcon
+									style={{ width: '60px', height: '60px' }}
+									url={currentProject.github}
+									target='_blank'
+									fgColor='gray'
+									bgColor='transparent'
+								/>
+								<Link
+									target='_blank'
+									href={currentProject.vercel}>
+									<img
+										style={{
+											color: 'gray',
+											background: 'transparent',
+											width: '2.2rem',
+										}}
+										src='https://i.postimg.cc/JhbNrV1c/vercel.png'
+										alt='logo vercel'
 									/>
-									<Link
-										target='_blank'
-										href={project.vercel}>
-										<img
-											style={{
-												color: 'gray',
-												background: 'transparent',
-												width: '2.2rem',
-											}}
-											src='https://i.postimg.cc/JhbNrV1c/vercel.png'
-											alt='logo vercel'
-										/>
-									</Link>
-								</div>
+								</Link>
 							</div>
-
-							<p className='text-sm md:text-2xl text-left'>{project.text}</p>
+							<Link className='mt-10 md:mt-0'
+								rel='stylesheet'
+								target='_blank'
+								href={currentProject.vercel}>
+								<motion.img
+									className='mt-5'
+									initial={{ y: -100, opacity: 0 }}
+									whileInView={{ y: 0, opacity: 1 }}
+									transition={{ duration: 1.2 }}
+									src={currentProject.img}
+									alt=''
+								/>
+							</Link>
 						</div>
+
+						<p className='text-sm md:text-2xl text-left'>{currentProject.text}</p>
 					</div>
-				))}
+				</div>
 			</div>
 
 			<div className='w-full absolute top-[30%] bg-[#799ee6]/10 left-0 h-[500px] -skew-y-12'></div>

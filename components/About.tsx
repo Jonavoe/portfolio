@@ -10,7 +10,7 @@ export default function About({}: Props) {
 		<div
 			className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-center mx-auto items-center'>
 			<h3 className='absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl'>
-				About
+				Sobre mi
 			</h3>
 
 			<motion.img
@@ -33,7 +33,7 @@ export default function About({}: Props) {
 					:
 				</h4>
 				<p className='text-sm md:text-2xl text-left text-gray-400'>
-					Soy un desarrollador Front End Junior apasionado por la tecnología y
+					Soy un desarrollador Full Stack apasionado por la tecnología y
 					el diseño. Tengo experiencia en el desarrollo de aplicaciones web
 					utilizando{' '}
 					<span className='underline decoration-[#799ee6]/50'>

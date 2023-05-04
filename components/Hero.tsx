@@ -8,7 +8,7 @@ type Props = {};
 
 export default function Hero({ }: Props) {
 	const [text, count] = useTypewriter({
-		words: ['Full-Stack'],
+		words: ['Desarrollador'],
 		typeSpeed: 150,
 		deleteSpeed: 50,
 		loop: true,
@@ -16,7 +16,7 @@ export default function Hero({ }: Props) {
 	});
 
 	const [text2, count2] = useTypewriter({
-		words: ['Developer'],
+		words: ['Full-Stack'],
 		typeSpeed: 150,
 		deleteSpeed: 50,
 		loop: true,
@@ -58,7 +58,7 @@ export default function Hero({ }: Props) {
 				<div className='pt-5'>
 					<Link href='#about'>
 						<button className='heroButton shadow hover:shadow-[#799ee6]/50 text-sm'>
-							About
+							Sobre mi
 						</button>
 					</Link>
 					{/* <Link href='#experience'>
@@ -73,7 +73,7 @@ export default function Hero({ }: Props) {
 					</Link>
 					<Link href='#projects'>
 						<button className='heroButton shadow hover:shadow-[#799ee6]/50 text-sm'>
-							Projects
+							Proyectos
 						</button>
 					</Link>
 				</div>
