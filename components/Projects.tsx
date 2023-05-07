@@ -85,7 +85,7 @@ function Projects({ }: Props) {
 							<h4 className='text-5xl mt-0 md:mt-40'>
 								{currentProject.title}
 							</h4>
-							<div className='flex flex-row items-center justify-center'>
+							<div className='flex z-10 flex-row items-center justify-center'>
 								<SocialIcon
 									style={{ width: '60px', height: '60px' }}
 									url={currentProject.github}
@@ -107,7 +107,7 @@ function Projects({ }: Props) {
 									/>
 								</Link>
 							</div>
-							<Link className='mt-10 md:mt-0'
+							<Link className='mt-10 z-10 md:mt-0'
 								rel='stylesheet'
 								target='_blank'
 								href={currentProject.vercel}>
