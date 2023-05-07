@@ -14,7 +14,7 @@ import Script from 'next/script';
 
 export default function Home() {
 	return (
-		<div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-auto -z-50 scrollbar scrollbar-track-gray-400/20  scrollbar-thumb-[#799ee6]/80'>
+		<div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-auto scrollbar scrollbar-track-gray-400/20  scrollbar-thumb-[#799ee6]/80'>
 			<Head>
 				<title>Joni`s Portfolio</title>
 			</Head>
