@@ -59,7 +59,7 @@ function Header({ }: Props) {
 				}}
 				className='flex flex-row space-x-5 items-center text-gray-300 cursor-pointer'>
 
-				<Link target='_blank' href='https://drive.google.com/file/d/1RAB2tlAssagSb07DvSJ0c64xRWRz0gz6/view?usp=sharing'>
+				<Link target='_blank' href='https://drive.google.com/file/d/1GUo3fqqhTeCPXNvdEuiLOj7C5gkQVh3E/view?usp=sharing'>
 					<p className='uppercase s'>CV</p>
 				</Link>
 

@@ -12,6 +12,13 @@ function Projects({ }: Props) {
 	const projects = [
 		{
 			title: 'Actived Planet',
+			img: 'https://i.postimg.cc/pL8gxS70/Copia-de-Copia-de-Copia-de-Dise-o-sin-t-tulo-removebg-preview.webp',
+			text: 'Esta aplicación, desarrollada para la empresa Social Media Lab, tiene como objetivo clasificar y completar la información de clientes potenciales.',
+			github: 'https://github.com/Jonavoe/sml-app',
+			vercel: 'https://sml-app.vercel.app/',
+		},
+		{
+			title: 'Actived Planet',
 			img: 'https://i.postimg.cc/t47zhChS/Project-pi.png',
 			text: 'Explore los países del mundo es una aplicación web que te permite descubrir información interesante sobre diferentes países y planificar actividades turísticas. Desarrollado en React y Redux, esta aplicación utiliza una base de datos en PostgreSQL y Sequelize como ORM',
 			github: 'https://github.com/Jonavoe/PI-Countries-main',
