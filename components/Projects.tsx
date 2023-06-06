@@ -11,7 +11,7 @@ function Projects({ }: Props) {
 
 	const projects = [
 		{
-			title: 'Social Media Lab',
+			title: 'Social Media Lab App',
 			img: 'https://i.postimg.cc/pL8gxS70/Copia-de-Copia-de-Copia-de-Dise-o-sin-t-tulo-removebg-preview.webp',
 			text: 'Esta aplicación, desarrollada para la empresa Social Media Lab, tiene como objetivo clasificar y completar la información de clientes potenciales.',
 			github: 'https://github.com/Jonavoe/sml-app',
