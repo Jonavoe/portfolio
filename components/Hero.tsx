@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
+import cv from "../public/cv.jpg"
 
 type Props = {};
 
@@ -28,8 +29,7 @@ export default function Hero({ }: Props) {
 			<BackgroundCircles />
 			<img
 				className=' relative rounded-full h-28 w-28 md:h-40 md:w-40 mx-auto object-cover'
-				// src='https://live.staticflickr.com/65535/52772764227_b573223194_z.jpg'
-				src='https://live.staticflickr.com/65535/52786300693_d55aee5bfb.jpg'
+				src={cv.src}
 				alt='avatar'
 			/>
 			<div className='z-20'>
@@ -40,19 +40,19 @@ export default function Hero({ }: Props) {
 					<div className='flex'>
 						<p className='text-2xl uppercase text-gray-500 pb-2 tracking-[15px]'>
 							<span className='opacity-0'>.</span>
-							{text}
+							DEVELOPER FULL STACK
 							<span className='opacity-0'>.</span>
 						</p>
-						<Cursor cursorColor='#799ee6' />
+						{/* <Cursor cursorColor='#799ee6' /> */}
 					</div>
-					<div className='flex'>
+					{/* <div className='flex'>
 						<p className='text-2xl uppercase text-gray-500 pb-2 tracking-[15px]'>
 							<span className='opacity-0'>.</span>
 							{text2}
 							<span className='opacity-0'>.</span>
 						</p>
 						<Cursor cursorColor='#799ee6' />
-					</div>
+					</div> */}
 				</div>
 
 				<div className='pt-5'>
