@@ -20,8 +20,8 @@ function Projects({ }: Props) {
 			// img: 'https://i.postimg.cc/pL8gxS70/Copia-de-Copia-de-Copia-de-Dise-o-sin-t-tulo-removebg-preview.webp',
 			img: sml.src,
 			text: 'Esta aplicación, desarrollada para la empresa Social Media Lab, tiene como objetivo clasificar y completar la información de clientes potenciales.',
-			github: 'https://github.com/Jonavoe/sml-app',
-			vercel: 'https://sml-app.vercel.app/',
+			github: 'https://github.com/Jonavoe/Ventas',
+			vercel: 'https://ventas-jonavoe.vercel.app/',
 		},
 		{
 			title: 'Actived Planet',
