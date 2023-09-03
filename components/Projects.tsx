@@ -50,6 +50,22 @@ function Projects({ }: Props) {
 			github: 'https://github.com/Jonavoe/Proyecto-rick-and-morty',
 			vercel: 'https://rick-and-morty-jonavoe.vercel.app',
 		},
+		{
+			title: 'Rick and Morty Fanpages',
+			// img: 'https://i.postimg.cc/HxD3k8L7/project-1-rym.png',
+			img: rick.src,
+			text: 'La app de Rick and Morty permite buscar personajes por ID, seleccionar aleatoriamente, tener favoritos y filtros. La interfaz es moderna y fácil de usar con tecnologías avanzadas como React, Redux, Axios, HTML y CSS.',
+			github: 'https://github.com/Jonavoe/Proyecto-rick-and-morty',
+			vercel: 'https://rick-and-morty-jonavoe.vercel.app',
+		},
+		{
+			title: 'Rick and Morty Fanpages',
+			// img: 'https://i.postimg.cc/HxD3k8L7/project-1-rym.png',
+			img: rick.src,
+			text: 'La app de Rick and Morty permite buscar personajes por ID, seleccionar aleatoriamente, tener favoritos y filtros. La interfaz es moderna y fácil de usar con tecnologías avanzadas como React, Redux, Axios, HTML y CSS.',
+			github: 'https://github.com/Jonavoe/Proyecto-rick-and-morty',
+			vercel: 'https://rick-and-morty-jonavoe.vercel.app',
+		},
 	];
 	const project1 = [
 		{
@@ -75,6 +91,22 @@ function Projects({ }: Props) {
 			text: 'La app de Rick and Morty permite buscar personajes por ID, seleccionar aleatoriamente, tener favoritos y filtros. La interfaz es moderna y fácil de usar con tecnologías avanzadas como React, Redux, Axios, HTML y CSS.',
 			github: 'https://github.com/Jonavoe/Proyecto-rick-and-morty',
 			vercel: 'https://rick-and-morty-jonavoe.vercel.app',
+		},
+		{
+			title: 'Buscador de Imagenes',
+			// img: 'https://i.postimg.cc/jSJwXbGH/project-3-pixabai.png',
+			img: shit.src,
+			text: 'App de búsqueda de imágenes con la API de Pixabay. Interfaz intuitiva y adaptable. Desarrollada con HTML, CSS, React y Bootstrap. Perfecta para proyectos que requieran imágenes de alta calidad.',
+			github: 'https://github.com/Jonavoe/searchImagesPixabai',
+			vercel: 'https://search-images-pixabai.vercel.app/',
+		},
+		{
+			title: 'Buscador de Imagenes',
+			// img: 'https://i.postimg.cc/jSJwXbGH/project-3-pixabai.png',
+			img: shit.src,
+			text: 'App de búsqueda de imágenes con la API de Pixabay. Interfaz intuitiva y adaptable. Desarrollada con HTML, CSS, React y Bootstrap. Perfecta para proyectos que requieran imágenes de alta calidad.',
+			github: 'https://github.com/Jonavoe/searchImagesPixabai',
+			vercel: 'https://search-images-pixabai.vercel.app/',
 		},
 		{
 			title: 'Buscador de Imagenes',
@@ -114,7 +146,7 @@ function Projects({ }: Props) {
 						<div className='w-full flex items-center justify-end'>
 							<div className='rounded-full bg-[rgba(1,1,1,.5)] hover:bg-[rgba(200,200,200,0.5)] px-3 py-1' onClick={() => closeDetail()}>X</div>
 						</div>
-						<div className='flex flex-col items-center justify-center gap-2 p-5'>
+						<div className='flex flex-col items-center justify-center gap-5 p-5'>
 							<div className=''>
 								<h2 className='font-semibold text-5xl'>
 									{projectDetail?.title}
@@ -208,6 +240,38 @@ function Projects({ }: Props) {
 					))
 					}
 				</div >
+				{/* <div className='flex items-center justify-center gap-5'>
+
+					{project1.map((item, index) => (
+						<motion.div
+							initial={{ x: 500, opacity: 0 }}
+							whileInView={{ opacity: 1, x: 0 }}
+							transition={{ duration: 2 }}
+							viewport={{ once: true }}
+							onClick={() => openDetail(item)}
+							className=' cursor-pointer'
+						>
+							<section className="projects-section" >
+
+								<div
+									className={`flex items-center justify-center ${"projects-box"}`}
+									style={{ "--clr": "#44D62C", "--i": 0 }}
+								>
+									<img
+										className="icon"
+										style={{ width: "auto", height: "auto", padding: "10px" }}
+										src={item.img}
+										alt="mui icon"
+									/>
+									<span>
+										{item.title}</span>
+								</div>
+
+							</section>
+						</motion.div>
+					))
+					}
+				</div > */}
 
 
 			</div>
