@@ -38,8 +38,49 @@ export default function Skills() {
             className={`flex items-center justify-center ${"skills-box"}`}
             style={{ "--clr": "#44D62C", "--i": 0 }}
           >
+            <FontAwesomeIcon className="icon" icon={faJs} />
+            <span>JAVASCRIPT</span>
+          </div>
+          <div
+            className={`flex items-center justify-center ${"skills-box"}`}
+            style={{ "--clr": "#44D62C", "--i": 0 }}
+          >
             <FontAwesomeIcon className="icon" icon={faHtml5} />
             <span>HTML</span>
+          </div>
+          <div
+            className={`flex items-center justify-center ${"skills-box"}`}
+            style={{ "--clr": "#44D62C", "--i": 0 }}
+          >
+            <img
+              className="icon"
+              style={{ width: "50px", height: "50px" }}
+              src="https://img.icons8.com/ios-filled/50/FFFFFF/redux.png"
+              alt="redux"
+            />
+            <span>REDUX</span>
+          </div>
+          <div
+            className={`flex items-center justify-center ${"skills-box"}`}
+            style={{ "--clr": "#44D62C", "--i": 0, alignItems: "center" }}
+          >
+            <img
+              className="icon"
+              style={{ width: "50px", height: "50px" }}
+              src="https://i.postimg.cc/kG8Gdj0b/mui.png"
+              alt="mui icon"
+            />
+            <span>MUI</span>
+          </div>
+        </section>
+
+        <section className="skills-section">
+          <div
+            className={`flex items-center justify-center ${"skills-box"}`}
+            style={{ "--clr": "#44D62C", "--i": 0 }}
+          >
+            <FontAwesomeIcon className="icon" icon={faReact} />
+            <span>REACT</span>
           </div>
           <div
             className={`flex items-center justify-center ${"skills-box"}`}
@@ -52,18 +93,14 @@ export default function Skills() {
             className={`flex items-center justify-center ${"skills-box"}`}
             style={{ "--clr": "#44D62C", "--i": 0 }}
           >
-            <FontAwesomeIcon className="icon" icon={faJs} />
-            <span>JAVASCRIPT</span>
+            <img
+              className="icon"
+              style={{ width: "50px", height: "50px" }}
+              src="https://img.icons8.com/ios-filled/50/FFFFFF/sass.png"
+              alt="sass"
+            />
+            <span>SASS</span>
           </div>
-          <div
-            className={`flex items-center justify-center ${"skills-box"}`}
-            style={{ "--clr": "#44D62C", "--i": 0 }}
-          >
-            <FontAwesomeIcon className="icon" icon={faReact} />
-            <span>REACT</span>
-          </div>
-        </section>
-        <section className="skills-section">
           <div
             className={`flex items-center justify-center ${"skills-box"}`}
             style={{ "--clr": "#44D62C", "--i": 0, alignItems: "center" }}
@@ -71,10 +108,20 @@ export default function Skills() {
             <img
               className="icon"
               style={{ width: "50px", height: "50px" }}
-              src="https://i.postimg.cc/kG8Gdj0b/mui.png"
-              alt="mui icon"
+              src="https://img.icons8.com/ios-filled/50/FFFFFF/visual-studio.png"
+              alt="visual-studio"
             />
-            <span>MUI</span>
+            <span>VSCODE</span>
+          </div>
+        </section>
+
+        <section className="skills-section">
+          <div
+            className={`flex items-center justify-center ${"skills-box"}`}
+            style={{ "--clr": "#44D62C", "--i": 0 }}
+          >
+            <FontAwesomeIcon className="icon" icon={faNode} />
+            <span>NODE JS</span>
           </div>
           <div
             className={`flex items-center justify-center ${"skills-box"}`}
@@ -90,18 +137,24 @@ export default function Skills() {
           >
             <img
               className="icon"
+              style={{ width: "50px", height: "50px" }}
+              src="https://img.icons8.com/ios-filled/50/FFFFFF/postgreesql.png"
+              alt="postgreesql"
+            />
+            <span>POSTGRESSQL</span>
+          </div>
+          <div
+            data-aos="fade-up"
+            className={`flex items-center justify-center ${"skills-box"}`}
+            style={{ "--clr": "#44D62C", "--i": 0, alignItems: "center" }}
+          >
+            <img
+              className="icon"
               style={{ width: "90px", height: "50px" }}
               src="https://i.postimg.cc/8c8kwR7P/mysql.png"
               alt="mysql"
             />
             <span>MYSQL</span>
-          </div>
-          <div
-            className={`flex items-center justify-center ${"skills-box"}`}
-            style={{ "--clr": "#44D62C", "--i": 0 }}
-          >
-            <FontAwesomeIcon className="icon" icon={faNode} />
-            <span>NODE JS</span>
           </div>
         </section>
       </div>
