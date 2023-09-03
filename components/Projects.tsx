@@ -8,10 +8,15 @@ import planet from "../public/planet.webp"
 import ecommerce from "../public/ecommerce.webp"
 import rick from "../public/rick.webp"
 import shit from "../public/shit.webp"
+import Image from 'next/image';
 
 type Props = {};
 
 function Projects({ }: Props) {
+	const [detail, setDetail] = useState(false)
+	// const [projectDetail, setProjectDetail] = useState<{ title: string; img: string; text: string; github: string; vercel: string } | undefined>();
+	const [projectDetail, setProjectDetail] = useState(Object);
+
 	const project = [
 		{
 			title: 'Social Media Lab App',
@@ -81,35 +86,134 @@ function Projects({ }: Props) {
 		},
 	];
 
+	const openDetail = (item: object) => {
+		setDetail(true)
+		setProjectDetail(item)
+	}
+
+	const closeDetail = () => {
+		setDetail(false)
+	}
+
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1.5 }}
-			className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-center mx-auto items-center z-0'>
+			className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-center mx-auto items-center z-0'
+		>
+			{detail &&
+				<div className='z-50 absolute top-0 right-0 h-screen w-screen bg-[rgba(0,0,0,0.5)]   flex justify-center items-center' onClick={() => closeDetail()}>
+
+					<motion.div
+						initial={{ opacity: 0, y: 500, x: -500 }}
+						whileInView={{ opacity: 1, y: 0, x: 0 }}
+						transition={{ duration: 1 }}
+						className={` flex flex-col justify-between p-5 items-center rounded-xl bg-[#222222] w-[40rem] h-fit`}
+					>
+						<div className='w-full flex items-center justify-end'>
+							<div className='rounded-full bg-[rgba(1,1,1,.5)] hover:bg-[rgba(200,200,200,0.5)] px-3 py-1' onClick={() => closeDetail()}>X</div>
+						</div>
+						<div className='flex flex-col items-center justify-center gap-2 p-5'>
+							<div className=''>
+								<h2 className='font-semibold text-5xl'>
+									{projectDetail?.title}
+								</h2>
+							</div>
+							<div className=''>
+								<Link href={projectDetail.vercel} target='_blank'>
+									<Image
+										src={projectDetail.img}
+										alt={projectDetail.title}
+										width={1000}
+										height={1000} />
+								</Link>
+							</div>
+							<div className=''>
+								<p>
+									{projectDetail?.text}
+								</p>
+							</div>
+						</div>
+					</motion.div>
+				</div >
+
+			}
 			<h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
 				Proyectos
 			</h3>
+			<div className='flex flex-col gap-5'>
 
-			<div className='flex flex-col gap-5 items-center justify-center'>
-				<div className='flex gap-5 mx-5'>
+				<div className='flex items-center justify-center gap-5'>
 
 					{project.map((item, index) => (
-						<div className='border-2'>
-							<div className='flex flex-col fap5
-					 items-center justify-center'>
-								<div className=''>{item.title}</div>
-								<div className=''>imagen</div>
-								<div className=''>{item.text}</div>
-							</div>
-						</div>
-					))}
-				</div>
-				<div className='border-2'>hola</div>
+						<motion.div
+							initial={{ x: -500, opacity: 0 }}
+							whileInView={{ opacity: 1, x: 0 }}
+							transition={{ duration: 2 }}
+							viewport={{ once: true }}
+							onClick={() => openDetail(item)}
+							className=' cursor-pointer'
+						>
+							<section className="projects-section" >
+
+								<div
+									className={`flex items-center justify-center ${"projects-box"}`}
+									style={{ "--clr": "#44D62C", "--i": 0 }}
+								>
+									<img
+										className="icon"
+										style={{ width: "auto", height: "auto", padding: "10px" }}
+										src={item.img}
+										alt="mui icon"
+									/>
+									<span>
+										{item.title}</span>
+								</div>
+
+							</section>
+						</motion.div>
+					))
+					}
+				</div >
+				<div className='flex items-center justify-center gap-5'>
+
+					{project1.map((item, index) => (
+						<motion.div
+							initial={{ x: 500, opacity: 0 }}
+							whileInView={{ opacity: 1, x: 0 }}
+							transition={{ duration: 2 }}
+							viewport={{ once: true }}
+							onClick={() => openDetail(item)}
+							className=' cursor-pointer'
+						>
+							<section className="projects-section" >
+
+								<div
+									className={`flex items-center justify-center ${"projects-box"}`}
+									style={{ "--clr": "#44D62C", "--i": 0 }}
+								>
+									<img
+										className="icon"
+										style={{ width: "auto", height: "auto", padding: "10px" }}
+										src={item.img}
+										alt="mui icon"
+									/>
+									<span>
+										{item.title}</span>
+								</div>
+
+							</section>
+						</motion.div>
+					))
+					}
+				</div >
+
+
 			</div>
 
 			{/* <div className='w-full absolute top-[30%] bg-[#799ee6]/10 left-0 h-[500px] -skew-y-12'></div> */}
-		</motion.div>
+		</motion.div >
 	);
 }
 
