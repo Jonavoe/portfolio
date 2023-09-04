@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
 import { SocialIcon } from 'react-social-icons';
 import sml from "../public/sml.webp"
 import planet from "../public/planet.webp"
@@ -15,6 +14,8 @@ import gestion_de_leads from "../public/gestion_de_leads.webp"
 import Gestion_de_ventas from "../public/Gestion_de_ventas.webp"
 import sml_general from "../public/sml_general.webp"
 import clientes from "../public/clientes.webp"
+import { CSSProperties } from 'react';
+
 
 type Props = {};
 
@@ -143,11 +144,12 @@ function Projects({ }: Props) {
 								whileInView={{ opacity: 1 }}
 								transition={{ duration: 1.5 }} className=''>
 								<Link href={projectDetail.vercel} target='_blank'>
-									<Image
+									<img
+										className="icon"
+										style={{ width: "auto", height: "auto", padding: "10px" }}
 										src={projectDetail.img}
-										alt={projectDetail.title}
-										width={1000}
-										height={1000} />
+										alt="mui icon"
+									/>
 								</Link>
 							</motion.div>
 							<div className='flex flex-col gap-5'>
@@ -181,7 +183,7 @@ function Projects({ }: Props) {
 
 					<div className='flex flex-col md:flex-row items-center justify-center gap-5'>
 
-						{project.map((item) => (
+						{project.map((item, index) => (
 							<motion.div
 								initial={{ x: -500, opacity: 0 }}
 								whileInView={{ opacity: 1, x: 0 }}
@@ -189,12 +191,13 @@ function Projects({ }: Props) {
 								viewport={{ once: true }}
 								onClick={() => openDetail(item)}
 								className=' cursor-pointer'
+								key={index}
 							>
 								<section className="projects-section" >
 
 									<div
 										className={`flex items-center justify-center ${"projects-box"}`}
-										style={{ "--clr": "#44D62C", "--i": 0 }}
+										style={{ "--clr": "#44D62C", "--i": 0 } as CSSProperties}
 									>
 										<img
 											className="icon"
@@ -213,7 +216,7 @@ function Projects({ }: Props) {
 					</div >
 					<div className='flex items-center justify-center gap-5'>
 
-						{project1.map((item) => (
+						{project1.map((item, index) => (
 							<motion.div
 								initial={{ x: 500, opacity: 0 }}
 								whileInView={{ opacity: 1, x: 0 }}
@@ -221,12 +224,13 @@ function Projects({ }: Props) {
 								viewport={{ once: true }}
 								onClick={() => openDetail(item)}
 								className=' cursor-pointer'
+								key={index}
 							>
 								<section className="projects-section" >
 
 									<div
 										className={`flex items-center justify-center ${"projects-box"}`}
-										style={{ "--clr": "#44D62C", "--i": 0 }}
+										style={{ "--clr": "#44D62C", "--i": 0 } as CSSProperties}
 									>
 										<img
 											className="icon"
