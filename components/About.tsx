@@ -31,7 +31,7 @@ export default function About({ }: Props) {
 						whileInView={{ x: 0, opacity: 1 }}
 						transition={{ duration: 1.2 }}
 						src={aboutme.src}
-						className='mt-20 md:mb-0 items-center justify-center flex w-40 h-40 rounded-full object-cover md:rounded-lg md:w-80 md:h-80 xl:w-[400px] xl:h-[400px]'
+						className='mt-20 md:mb-0 items-center justify-center flex w-40 h-40 rounded-lg object-cover md:rounded-lg md:w-80 md:h-80 xl:w-[400px] xl:h-[400px]'
 					/>
 
 					<div className='px-0 md:px-10'>
