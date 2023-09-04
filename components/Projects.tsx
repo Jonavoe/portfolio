@@ -148,14 +148,14 @@ function Projects({ }: Props) {
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
 						transition={{ duration: 1.5 }}
-						className={` flex flex-col justify-between p-5 items-center rounded-xl bg-[#222222] w-[40rem] h-fit`}
+						className={` flex flex-col justify-between p-5 items-center rounded-xl bg-[#222222] md:w-[40rem] w-[22rem] md:h-fit h-[38rem]`}
 					>
 						<div className='w-full flex items-center justify-end'>
-							<div className='rounded-full bg-[rgba(1,1,1,.5)] hover:bg-[rgba(200,200,200,0.5)] px-3 py-1' onClick={() => closeDetail()}>X</div>
+							<div className='rounded-full bg-[rgba(1,1,1,.5)] hover:bg-[rgba(68,214,44,0.5)] px-3 py-1' onClick={() => closeDetail()}>X</div>
 						</div>
 						<div className='flex flex-col items-center justify-center gap-5 p-5'>
 							<div className=''>
-								<h2 className='font-semibold text-5xl text-center'>
+								<h2 className='font-semibold md:text-5xl text-2xl text-center'>
 									{projectDetail?.title}
 								</h2>
 							</div>
@@ -165,8 +165,7 @@ function Projects({ }: Props) {
 								transition={{ duration: 1.5 }} className=''>
 								<Link href={projectDetail.vercel} target='_blank'>
 									<img
-										className="icon"
-										style={{ width: "auto", height: "auto", padding: "10px" }}
+										className={` md:w-auto md:h-auto w-52 ${"icon"}`}
 										src={projectDetail.img}
 										alt="mui icon"
 									/>
@@ -188,7 +187,7 @@ function Projects({ }: Props) {
 				</div >
 
 			}
-			<h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+			<h3 className='absolute top-16 uppercase tracking-[20px] text-gray-500 text-2xl'>
 				Proyectos
 			</h3>
 			<div className="w-10/12">
