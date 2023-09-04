@@ -55,7 +55,7 @@ function Projects({ }: Props) {
 		{
 			title: 'Gestion de Empleados',
 			img: Gestion_de_empleados.src,
-			text: 'Esta aplicación, desarrollada para la empresa Social Media Lab, tiene como objetivo clasificar y completar la información de clientes potenciales.',
+			text: 'La gestión de empleados es una funcionalidad clave de la aplicación SML, que permite llevar a cabo diversas acciones, incluyendo la creación de nuevos empleados, la edición de sus datos, la capacidad de suspender o rehabilitar cuentas, así como la asignación de leads a los freelancers.',
 			github: 'https://github.com/Jonavoe/Ventas',
 			vercel: 'https://ventas-jonavoe.vercel.app/',
 			tecnologias: ["ReactJS", "JavaScript", "NodeJS", "mongoDb", "Clerk", "Redux", "MUI", "Tailwind"]
@@ -71,16 +71,16 @@ function Projects({ }: Props) {
 		{
 			title: 'Gestion de ventas',
 			img: Gestion_de_ventas.src,
-			text: 'Esta aplicación, desarrollada para la empresa Social Media Lab, tiene como objetivo clasificar y completar la información de clientes potenciales.',
+			text: 'La gestión de ventas en la aplicación SML ofrece un seguimiento completo de todas las transacciones, desde prospectos hasta conversiones, para optimizar el proceso comercial.',
 			github: 'https://github.com/Jonavoe/Ventas',
 			vercel: 'https://ventas-jonavoe.vercel.app/',
 			tecnologias: ["ReactJS", "JavaScript", "NodeJS", "mongoDb", "Clerk", "Redux", "MUI", "Tailwind"]
 		}, {
 			title: 'Aplicacion de Clientes',
 			img: clientes.src,
-			text: 'Explore los países del mundo es una aplicación web que te permite descubrir información interesante sobre diferentes países y planificar actividades turísticas. Desarrollado en React y Redux, esta aplicación utiliza una base de datos en PostgreSQL y Sequelize como ORM',
-			github: 'https://github.com/Jonavoe/PI-Countries-main',
-			vercel: 'https://pi-countries-main-green.vercel.app/',
+			text: 'Nuestra aplicación de clientes permite a los usuarios rastrear sus estadísticas en redes sociales, visualizar su crecimiento y consultar el estado de sus pagos de manera conveniente y efectiva.',
+			github: 'https://github.com/Jonavoe/Ventas',
+			vercel: 'https://ventas-jonavoe.vercel.app/clientes-home',
 			tecnologias: ["ReactJS", "JavaScript", "NodeJS", "mongoDb", "Clerk", "Redux", "MUI", "Tailwind"]
 		},
 	];
@@ -89,9 +89,9 @@ function Projects({ }: Props) {
 		{
 			title: 'Pokedex',
 			img: pokedex.src,
-			text: 'Explore los países del mundo es una aplicación web que te permite descubrir información interesante sobre diferentes países y planificar actividades turísticas. Desarrollado en React y Redux, esta aplicación utiliza una base de datos en PostgreSQL y Sequelize como ORM',
-			github: 'https://github.com/Jonavoe/PI-Countries-main',
-			vercel: 'https://pi-countries-main-green.vercel.app/',
+			text: 'Descubre y guarda tus Pokémon favoritos con nuestra Pokédex. Crea una cuenta para acceder a estadísticas detalladas de cada Pokémon.',
+			github: 'https://github.com/Jonavoe',
+			vercel: 'https://github.com/Jonavoe',
 			tecnologias: ["React Native", "JavaScript", "API Pokemen", "Tailwind"]
 		},
 		{
