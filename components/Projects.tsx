@@ -1,9 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { SocialIcon } from 'react-social-icons';
-import sml from "../public/sml.webp"
 import planet from "../public/planet.webp"
 import ecommerce from "../public/ecommerce.webp"
 import rick from "../public/rick.webp"
@@ -22,6 +20,28 @@ type Props = {};
 function Projects({ }: Props) {
 	const [detail, setDetail] = useState(false)
 	const [projectDetail, setProjectDetail] = useState(Object);
+	const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+	const initialAnimation1 = isSmallScreen
+		? { x: 500, opacity: 0 }
+		: { x: 100, opacity: 0 };
+	const initialAnimation2 = isSmallScreen
+		? { x: -500, opacity: 0 }
+		: { x: -100, opacity: 0 };
+
+	useEffect(() => {
+		const checkWindowSize = () => {
+			setIsSmallScreen(window.innerWidth <= 768);
+		};
+
+		window.addEventListener('resize', checkWindowSize);
+
+		checkWindowSize();
+
+		return () => {
+			window.removeEventListener('resize', checkWindowSize);
+		};
+	}, []);
 
 	const project = [
 		{
@@ -41,7 +61,7 @@ function Projects({ }: Props) {
 			tecnologias: ["ReactJS", "JavaScript", "NodeJS", "mongoDb", "Clerk", "Redux", "MUI", "Tailwind"]
 		},
 		{
-			title: 'Clasificacion de Clientes Potenciales',
+			title: 'Clasificacion de Clientes',
 			img: gestion_de_leads.src,
 			text: 'Esta aplicación, desarrollada para la empresa Social Media Lab, tiene como objetivo clasificar y completar la información de clientes potenciales.',
 			github: 'https://github.com/Jonavoe/Ventas',
@@ -89,7 +109,7 @@ function Projects({ }: Props) {
 			vercel: 'https://ecommerce-jonavoe.vercel.app/', tecnologias: ["ReactJS", "JavaScript", "Redux", "API Planet", "PostgreSQL", "Express", "Sequelize"]
 		},
 		{
-			title: 'Rick and Morty Fanpages',
+			title: 'Rick and Morty',
 			img: rick.src,
 			text: 'La app de Rick and Morty permite buscar personajes por ID, seleccionar aleatoriamente, tener favoritos y filtros. La interfaz es moderna y fácil de usar con tecnologías avanzadas como React, Redux, Axios, HTML y CSS.',
 			github: 'https://github.com/Jonavoe/Proyecto-rick-and-morty',
@@ -178,14 +198,13 @@ function Projects({ }: Props) {
 					whileInView={{ width: "100%", height: 0 }}
 					transition={{ duration: 3, ease: "easeOut" }}
 				/>
-				<div className='flex flex-col gap-5'>
+				<div className='flex flex-row items-center justify-center md:flex-col gap-2 md:gap-5'>
 
-
-					<div className='flex flex-col md:flex-row items-center justify-center gap-5'>
+					<div className='flex flex-col md:flex-row items-center justify-center gap-2 md:gap-5'>
 
 						{project.map((item, index) => (
 							<motion.div
-								initial={{ x: -500, opacity: 0 }}
+								initial={initialAnimation2}
 								whileInView={{ opacity: 1, x: 0 }}
 								transition={{ duration: 2 }}
 								viewport={{ once: true }}
@@ -200,13 +219,15 @@ function Projects({ }: Props) {
 										style={{ "--clr": "#44D62C", "--i": 0 } as CSSProperties}
 									>
 										<img
-											className="icon"
-											style={{ width: "auto", height: "auto", padding: "10px" }}
+											className={`pt-1 md:w-auto md:h-auto w-24 h-20 ${"icon"}`}
 											src={item.img}
 											alt="mui icon"
 										/>
-										<span className='text-center'>
-											{item.title}</span>
+										<span className=''>
+											<p className='text-[0.7rem] md:text-xl font-normal md:font-semibold text-center pb-1'>
+												{item.title}
+											</p>
+										</span>
 									</div>
 
 								</section>
@@ -214,11 +235,11 @@ function Projects({ }: Props) {
 						))
 						}
 					</div >
-					<div className='flex items-center justify-center gap-5'>
+					<div className='flex flex-col md:flex-row items-center justify-center gap-2 md:gap-5'>
 
 						{project1.map((item, index) => (
 							<motion.div
-								initial={{ x: 500, opacity: 0 }}
+								initial={initialAnimation1}
 								whileInView={{ opacity: 1, x: 0 }}
 								transition={{ duration: 2 }}
 								viewport={{ once: true }}
@@ -233,13 +254,15 @@ function Projects({ }: Props) {
 										style={{ "--clr": "#44D62C", "--i": 0 } as CSSProperties}
 									>
 										<img
-											className="icon"
-											style={{ width: "auto", height: "auto", padding: "10px" }}
+											className={`pt-1 md:w-auto md:h-auto w-24 h-20 ${"icon"}`}
 											src={item.img}
 											alt="mui icon"
 										/>
-										<span className="text-center">
-											{item.title}</span>
+										<span className=''>
+											<p className='text-[0.7rem] md:text-xl font-normal md:font-semibold text-center pb-1'>
+												{item.title}
+											</p>
+										</span>
 									</div>
 
 								</section>
