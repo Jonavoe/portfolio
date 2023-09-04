@@ -29,18 +29,21 @@ function Header({ }: Props) {
 					fgColor='gray'
 					bgColor='transparent'
 					target='_blank'
+					className='rounded-full hover:bg-[#44D62C]'
 				/>
 				<SocialIcon
 					url='https://github.com/Jonavoe'
 					fgColor='gray'
 					bgColor='transparent'
 					target='_blank'
+					className='rounded-full hover:bg-[#44D62C]'
 				/>
 				<SocialIcon
 					url='https://twitter.com/VoeffrayJona'
 					fgColor='gray'
 					bgColor='transparent'
 					target='_blank'
+					className='rounded-full hover:bg-[#44D62C]'
 				/>
 			</motion.div>
 			<motion.div
@@ -68,7 +71,7 @@ function Header({ }: Props) {
 						<p className='uppercase'>Contacto</p>
 					</Link>
 					<SocialIcon
-						className='cursor-pointer'
+						className='cursor-pointer rounded-full hover:bg-[#44D62C]'
 						network='email'
 						fgColor='gray'
 						bgColor='transparent'
