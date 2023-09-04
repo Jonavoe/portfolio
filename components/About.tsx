@@ -21,7 +21,7 @@ export default function About({ }: Props) {
 					whileInView={{ width: "100%", height: 0 }}
 					transition={{ duration: 3, ease: "easeOut" }}
 				/>
-				<div className='flex items-center justify-center'>
+				<div className='flex flex-col md:flex-row items-center justify-center gap-2'>
 
 					<motion.img
 						initial={{
@@ -31,7 +31,7 @@ export default function About({ }: Props) {
 						whileInView={{ x: 0, opacity: 1 }}
 						transition={{ duration: 1.2 }}
 						src={aboutme.src}
-						className='md:mt-20 md:mb-0 items-center justify-center flex w-40 h-40 rounded-full object-cover md:rounded-lg md:w-80 md:h-80 xl:w-[400px] xl:h-[400px]'
+						className='mt-20 md:mb-0 items-center justify-center flex w-40 h-40 rounded-full object-cover md:rounded-lg md:w-80 md:h-80 xl:w-[400px] xl:h-[400px]'
 					/>
 
 					<div className='px-0 md:px-10'>
@@ -52,9 +52,6 @@ export default function About({ }: Props) {
 								En producción, desplegué en Vercel (frontend) y Render (backend) para optimizar. Utilicé hosting español Dongee para rendimiento y disponibilidad.
 							</p>
 
-							<p>
-								Mi pasión por tecnología y diseño crece con cada proyecto. Espero más oportunidades para aplicar conocimientos y crear soluciones innovadoras.
-							</p>
 						</div>
 
 
