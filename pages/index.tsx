@@ -12,7 +12,7 @@ import Script from 'next/script';
 
 export default function Home() {
 	return (
-		<div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-auto scrollbar scrollbar-track-gray-400/20  scrollbar-thumb-[#799ee6]/80'>
+		<div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-auto scrollbar scrollbar-track-gray-400/20  scrollbar-thumb-[#44D62C]/80'>
 			<Head>
 				<title>Joni`s Portfolio</title>
 			</Head>
@@ -63,7 +63,7 @@ export default function Home() {
 
 			<div className='sticky bottom-5 w-full cursor-pointer flex items-center justify-center'>
 				<Link href='#hero'>
-					<ArrowLongUpIcon className='h-7 w-7 rounded-full filter border border-[#343434] hover:border-[#799ee6] grayscale hover:grayscale-0 transition-all' />
+					<ArrowLongUpIcon className='h-7 w-7 rounded-full filter border text-[#44D62C] border-[#44D62C] hover:border-[#44D62C] grayscale hover:grayscale-0 transition-all' />
 				</Link>
 			</div>
 
