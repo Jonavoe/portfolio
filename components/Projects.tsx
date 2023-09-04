@@ -181,7 +181,7 @@ function Projects({ }: Props) {
 
 					<div className='flex flex-col md:flex-row items-center justify-center gap-5'>
 
-						{project.map((item, index) => (
+						{project.map((item) => (
 							<motion.div
 								initial={{ x: -500, opacity: 0 }}
 								whileInView={{ opacity: 1, x: 0 }}
@@ -213,7 +213,7 @@ function Projects({ }: Props) {
 					</div >
 					<div className='flex items-center justify-center gap-5'>
 
-						{project1.map((item, index) => (
+						{project1.map((item) => (
 							<motion.div
 								initial={{ x: 500, opacity: 0 }}
 								whileInView={{ opacity: 1, x: 0 }}
