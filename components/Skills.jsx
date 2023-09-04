@@ -23,6 +23,11 @@ export default function Skills() {
       <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
         Skills
       </h3>
+
+      {/* 
+			<h3 className='absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm'>
+				Hover over a skill for currency proficiency
+			</h3> */}
       <div className="w-10/12">
         <motion.hr
           className=" border-2 mb-10 mt-10 border-[#44D62C]  rounded-2xl md:h-5/6 opacity-0 md:opacity-100 h-0 hidden md:block"
