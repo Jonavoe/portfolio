@@ -64,18 +64,6 @@ export default function Skills() {
               />
               <span>REDUX</span>
             </div>
-            <div
-              className={`flex items-center justify-center ${"skills-box"}`}
-              style={{ "--clr": "#44D62C", "--i": 0, alignItems: "center" }}
-            >
-              <img
-                className="icon"
-                style={{ width: "50px", height: "50px" }}
-                src="https://i.postimg.cc/kG8Gdj0b/mui.png"
-                alt="mui icon"
-              />
-              <span>MUI</span>
-            </div>
           </section>
 
           <section className="skills-section">
@@ -104,18 +92,6 @@ export default function Skills() {
                 alt="sass"
               />
               <span>SASS</span>
-            </div>
-            <div
-              className={`flex items-center justify-center ${"skills-box"}`}
-              style={{ "--clr": "#44D62C", "--i": 0, alignItems: "center" }}
-            >
-              <img
-                className="icon"
-                style={{ width: "50px", height: "50px" }}
-                src="https://img.icons8.com/ios-filled/50/FFFFFF/visual-studio.png"
-                alt="visual-studio"
-              />
-              <span>VSCODE</span>
             </div>
           </section>
 
@@ -146,6 +122,34 @@ export default function Skills() {
                 alt="postgreesql"
               />
               <span>POSTGRESSQL</span>
+            </div>
+          </section>
+
+
+          <section className="skills-section">
+            <div
+              className={`flex items-center justify-center ${"skills-box"}`}
+              style={{ "--clr": "#44D62C", "--i": 0, alignItems: "center" }}
+            >
+              <img
+                className="icon"
+                style={{ width: "50px", height: "50px" }}
+                src="https://i.postimg.cc/kG8Gdj0b/mui.png"
+                alt="mui icon"
+              />
+              <span>MUI</span>
+            </div>
+            <div
+              className={`flex items-center justify-center ${"skills-box"}`}
+              style={{ "--clr": "#44D62C", "--i": 0, alignItems: "center" }}
+            >
+              <img
+                className="icon"
+                style={{ width: "50px", height: "50px" }}
+                src="https://img.icons8.com/ios-filled/50/FFFFFF/visual-studio.png"
+                alt="visual-studio"
+              />
+              <span>VSCODE</span>
             </div>
             <div
               data-aos="fade-up"
