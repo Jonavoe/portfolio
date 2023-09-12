@@ -73,7 +73,7 @@ function Header({ changeLenguage, es }) {
         </div>
         {es ? (
           <Link
-            to="https://drive.google.com/file/d/18EN28d6H0RQPNJt6pxFxvsGpA5cG2GyA/view?usp=sharing"
+            to="https://drive.google.com/file/d/1cE4cOeiS8RRnZ0DHFIx-s7SyV83kVtxh/view?usp=sharing"
             target="_blank"
           >
             <div className="uppercase cursor-pointer rounded-full hover:bg-[#44D62C] py-2 px-3">
@@ -82,7 +82,7 @@ function Header({ changeLenguage, es }) {
           </Link>
         ) : (
           <Link
-            to="https://drive.google.com/file/d/1YQf2UvM_yFZ1pdEQhxUIUggab3P_wvwA/view?usp=sharing"
+            to="https://drive.google.com/file/d/1jwLCcfSO6UIkpprFbAV3pesHKx_uo6lj/view?usp=sharing"
             target="_blank"
           >
             <div className="uppercase cursor-pointer rounded-full hover:bg-[#44D62C] py-2 px-3">
