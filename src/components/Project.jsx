@@ -10,7 +10,7 @@ import gestion_de_leads from "../assets/Imagen/gestion_de_leads.webp";
 import Gestion_de_ventas from "../assets/Imagen/Gestion_de_ventas.webp";
 import sml_general from "../assets/Imagen/sml_general.webp";
 import clientes from "../assets/Imagen/clientes.webp";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 function Projects({ es }) {
   const [detail, setDetail] = useState(false);
