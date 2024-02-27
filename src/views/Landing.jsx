@@ -2,6 +2,7 @@ import { Link } from "react-scroll";
 import About from "../components/About";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Experience from "../components/Experience";
 
 export default function Landing() {
   return (
@@ -10,6 +11,7 @@ export default function Landing() {
         <Header />
         <Hero />
         <About />
+        <Experience />
       </div>
       <div className="flex items-center justify-center">
         <Link
