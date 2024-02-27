@@ -38,7 +38,7 @@ body {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 1px;
   bottom: 0;
   left: 0;
   background-color: var(--green);
@@ -49,4 +49,9 @@ body {
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.moveHover:hover {
+  transform: translate(-3px, -2px);
+  transition: all 0.2s ease;
 }
