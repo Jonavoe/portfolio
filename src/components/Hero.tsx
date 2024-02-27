@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Hero() {
     return (
-        <div id='hero' className='flex justify-center my-44'>
+        <div id='hero' className='flex justify-center my-60'>
             <div className='w-3/4 md:w-3/6'>
                 <div className='flex flex-col gap-6'>
                     <p className='text-[--green]   font-medium'>
