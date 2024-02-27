@@ -11,6 +11,7 @@ export default function Logo() {
       <title>Logo</title>
       <g transform="translate(-8.000000, -2.000000)">
         <g transform="translate(11.000000, 5.000000)">
+          
           <polygon
             id="Shape"
             fill="#0a192f"
@@ -30,6 +31,7 @@ export default function Logo() {
           >
             J
           </text>
+
         </g>
       </g>
     </svg>
