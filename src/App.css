@@ -40,12 +40,12 @@ body {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 1px;
+  height: 0.1px;
   bottom: 0;
   left: 0;
   background-color: var(--green);
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.35s ease-out;
 }
 
 .hover-underline-animation:hover::after {
@@ -79,4 +79,12 @@ body {
 .div-1:hover ~ .div-3 {
   transform: translate(15px, 15px);
   transition: all 0.5s ease;
+}
+
+.borderLeft {
+  border-left: 2px solid var(--slate);
+}
+
+.borderLeftSelect {
+  border-left: 2px solid var(--green);
 }
