@@ -21,9 +21,12 @@ export default function About() {
                     </ul>
 
                 </div>
-                <div>
-                    <img className='w-72 mt-14' src={FotoCv} alt="profile" />
+                <div className='relative w-64 h-60 mt-14'>
+                    <div className='div-1 absolute z-20 top-0 left-0 w-60 h-60'></div>
+                    <img className='div-2 z-10 absolute top-0 left-0 w-72' src={FotoCv} alt="profile" />
+                    <div className='div-3 border-2 border-[--green] absolute z-0 top-0 left-0 w-60 h-60'></div>
                 </div>
+
             </div>
         </div >
     )
