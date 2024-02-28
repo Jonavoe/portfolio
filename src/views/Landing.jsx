@@ -3,6 +3,7 @@ import About from "../components/About";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Experience from "../components/Experience";
+import Up from "../components/icons/Up";
 
 export default function Landing() {
   return (
@@ -13,7 +14,7 @@ export default function Landing() {
         <About />
         <Experience />
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center ">
         <Link
           className="hover:text-[--green] transition-all duration-500 mb-5"
           activeClass="active"
@@ -23,7 +24,7 @@ export default function Landing() {
           offset={-70}
           duration={500}
         >
-          <span className="text-[--green]"></span>up
+          <Up />
         </Link>
       </div>
     </>
