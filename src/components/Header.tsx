@@ -71,9 +71,9 @@ export default function Header() {
                         </Link>
                     </li>
                 </ul>
-                <div className="border rounded-sm border-[--green] px-2 py-1 cursor-pointer text-[--green]">
+                <a className="border rounded-sm border-[--green] px-2 py-1 cursor-pointer hover:text-[--green]" href='https://drive.google.com/file/d/12FmML7tNOXSdCl0lCtTYDBZE7YyYvMvp/view?usp=sharing' target='_blank'>
                     Resume
-                </div>
+                </a>
             </div>
         </div>
     )
