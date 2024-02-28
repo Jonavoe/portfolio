@@ -560,6 +560,38 @@ video {
   top: 0px;
 }
 
+.top-1 {
+  top: 0.25rem;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.top-11 {
+  top: 2.75rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -608,6 +640,10 @@ video {
   margin-top: 3.5rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .flex {
   display: flex;
 }
@@ -624,6 +660,22 @@ video {
   height: 100%;
 }
 
+.h-72 {
+  height: 18rem;
+}
+
+.h-64 {
+  height: 16rem;
+}
+
+.h-52 {
+  height: 13rem;
+}
+
+.h-60 {
+  height: 15rem;
+}
+
 .w-14 {
   width: 3.5rem;
 }
@@ -638,6 +690,26 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-52 {
+  width: 13rem;
+}
+
+.w-60 {
+  width: 15rem;
 }
 
 .transform {
@@ -696,8 +768,32 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-\[--green\] {
   border-color: var(--green);
+}
+
+.border-\[\] {
+  border-color: ;
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[--green\] {
+  background-color: var(--green);
+}
+
+.bg-\[--greenOpacity\] {
+  background-color: var(--greenOpacity);
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
 }
 
 .px-2 {
