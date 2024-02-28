@@ -11,6 +11,8 @@
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
   --green: #64ffda;
+  --greenOpacity: #64ffdb80;
+  --greenOpacity1: rgba(100, 255, 219, 0) 1;
 }
 
 body {
@@ -54,4 +56,27 @@ body {
 .moveHover:hover {
   transform: translate(-3px, -2px);
   transition: all 0.2s ease;
+}
+
+.div-1 {
+  background-color: var(--greenOpacity);
+}
+
+.div-1:hover {
+  background-color: var(--greenOpacity1);
+  transition: all 0.5s ease;
+}
+
+.div-1:hover ~ .div-2 {
+  transform: translate(-5px, -5px);
+  transition: all 0.5s ease;
+}
+
+.div-1 ~ .div-3 {
+  transform: translate(10px, 10px);
+}
+
+.div-1:hover ~ .div-3 {
+  transform: translate(15px, 15px);
+  transition: all 0.5s ease;
 }
