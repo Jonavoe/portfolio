@@ -11,7 +11,7 @@
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
   --green: #64ffda;
-  --greenOpacity: #64ffdb80;
+  --greenOpacity: #64ffda80;
   --greenOpacity1: rgba(100, 255, 219, 0) 1;
 }
 
@@ -87,4 +87,36 @@ body {
 
 .borderLeftSelect {
   border-left: 2px solid var(--green);
+}
+
+.share-icon {
+  stroke: var(--light-slate);
+  transition: stroke 0.3s;
+}
+
+.share-icon.hover {
+  stroke: var(--green);
+}
+
+.hover-underline-animation-work {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation-work::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--green);
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+}
+
+.hover-underline-animation-work:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
