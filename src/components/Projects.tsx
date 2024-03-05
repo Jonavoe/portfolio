@@ -1,5 +1,9 @@
 import React from 'react'
+import AutoflowLanding from "../assets/AutoflowLanding.png"
 import AutoflowDesktop from "../assets/AutoflowDesktop.png"
+import smlapp from "../assets/smlapp.png"
+import vendedores from "../assets/vendedores.png"
+import corredores from "../assets/corredores.png"
 import CardRight from './CardRight'
 import CardLeft from './CardLeft'
 export default function Projects() {
@@ -12,7 +16,7 @@ export default function Projects() {
                     <div className='flex flex-col gap-10'>
 
                         <CardRight
-                            image={AutoflowDesktop}
+                            image={AutoflowLanding}
                             title={"Autoflow Dashboard"}
                             description={"i work in upgrading in the aplicationupgrading in the aplicationupgrading in the aplicationupgrading in the aplicationupgrading"}
                             technologies={["ReactJs", "NextJs", "Docker", "AWS", "GitLab", "CICD"]}
@@ -30,23 +34,31 @@ export default function Projects() {
                         />
 
                         <CardRight
-                            image={AutoflowDesktop}
+                            image={smlapp}
                             title={"Autoflow Dashboard"}
                             description={"i work in upgrading in the aplicationupgrading in the aplicationupgrading in the aplicationupgrading in the aplicationupgrading"}
                             technologies={["ReactJs", "NextJs", "Docker", "AWS", "GitLab", "CICD"]}
                             git={""}
-                            page={""}
+                            page={"https://ventas-jonavoe.vercel.app/"}
                         />
 
                         <CardLeft
-                            image={AutoflowDesktop}
+                            image={vendedores}
                             title={"Autoflow Dashboard"}
                             description={"i work in upgrading in the aplicationupgrading in the aplicationupgrading in the aplicationupgrading in the aplicationupgrading"}
                             technologies={["ReactJs", "NextJs", "Docker", "AWS", "GitLab", "CICD"]}
                             git={""}
-                            page={""}
+                            page={"https://ventas-jonavoe.vercel.app/"}
                         />
 
+                        <CardRight
+                            image={corredores}
+                            title={"Autoflow Dashboard"}
+                            description={"i work in upgrading in the aplicationupgrading in the aplicationupgrading in the aplicationupgrading in the aplicationupgrading"}
+                            technologies={["ReactJs", "NextJs", "Docker", "AWS", "GitLab", "CICD"]}
+                            git={""}
+                            page={"https://ventas-jonavoe.vercel.app/"}
+                        />
                     </div>
                 </div>
             </div>
