@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Experience from "../components/Experience";
 import Up from "../components/icons/Up";
+import Projects from "../components/Projects";
 
 export default function Landing() {
   return (
@@ -13,6 +14,7 @@ export default function Landing() {
         <Hero />
         <About />
         <Experience />
+        <Projects />
       </div>
       <div className="flex items-center justify-center ">
         <Link

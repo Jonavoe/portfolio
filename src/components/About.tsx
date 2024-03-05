@@ -1,5 +1,5 @@
 import React from 'react'
-import FotoCv from "../assets/Imagen/FotoCv.jpg";
+import FotoCv from "../assets/FotoCv.jpg";
 
 export default function About() {
     return (
