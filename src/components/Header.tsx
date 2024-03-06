@@ -6,7 +6,7 @@ import LogoBack from './icons/LogoBack';
 
 export default function Header() {
     return (
-        <div id='header' className='flex justify-between items-center mx-10 my-4 header'>
+        <div id='header' className=' justify-between items-center mx-10 my-4 header flex'>
             <div className='w-14 h-14 relative cursor-pointer'>
                 <div className='absolute top-0 left-0 w-full h-full'>
                     <LogoBack />
@@ -16,7 +16,7 @@ export default function Header() {
                 </div>
             </div>
 
-            <div className="flex gap-8">
+            <div className="gap-8  hidden md:flex">
                 <ul className='flex items-center justify-center gap-8'>
                     <li>
                         <Link
