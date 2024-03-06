@@ -3,9 +3,9 @@ import FotoCv from "../assets/FotoCv.jpg";
 
 export default function About() {
     return (
-        <div id='about' className='flex justify-center gap-10 mt-96 mb-40'>
-            <div className='w-3/4 md:w-3/6 flex  justify-center gap-10'>
-                <div className='flex w-3/4 flex-col gap-4 '>
+        <div id='about' className='flex justify-center gap-10 md:mt-96 md:mb-40'>
+            <div className='w-3/4 md:w-3/6 flex justify-center gap-10'>
+                <div className='flex md:w-3/4 flex-col gap-4 '>
 
                     <h2 className='text-3xl font-bold text-[--lightest-slate]'><span className='text-[--green]'>01.</span> About Me</h2>
                     <p className=' text-[--light-slate]'>Hello! I'm Jonathan Voeffray, a web developer with a passion for creating digital solutions. My journey in web development began in 2021 when I started learning HTML, CSS, and React.</p>
@@ -21,7 +21,7 @@ export default function About() {
                     </ul>
 
                 </div>
-                <div className='relative w-64 h-60 mt-14'>
+                <div className='hidden md:block relative w-64 h-60 mt-14'>
                     <div className='div-1 absolute z-20 top-0 left-0 w-60 h-60'></div>
                     <img className='div-2 z-10 absolute top-0 left-0 w-72' src={FotoCv} alt="profile" />
                     <div className='div-3 border-2 border-[--green] absolute z-0 top-0 left-0 w-60 h-60'></div>
