@@ -19,8 +19,8 @@ export default function CardMobile({ image, title, description, technologies, gi
                     {description}
                 </div>
                 <div className='flex gap-2 text-[--slate]'>
-                    {technologies && technologies.map(tech =>
-                        < div className='transition duration-300 text-sm hover:text-[--green]' > {tech}</div>
+                    {technologies && technologies.map((tech: string, index: number) =>
+                        < div key={index} className='transition duration-300 text-sm hover:text-[--green]' > {tech}</div>
                     )}
                 </div>
                 <div className='flex gap-3 '>
