@@ -552,6 +552,10 @@ video {
   visibility: hidden;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -560,12 +564,32 @@ video {
   position: relative;
 }
 
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
 .left-0 {
   left: 0px;
 }
 
+.left-3 {
+  left: 0.75rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.left-6 {
+  left: 1.5rem;
 }
 
 .z-0 {
@@ -612,6 +636,10 @@ video {
   margin-bottom: 3.5rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .mb-40 {
   margin-bottom: 10rem;
 }
@@ -624,12 +652,24 @@ video {
   margin-top: 3.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mt-96 {
   margin-top: 24rem;
+}
+
+.mb-36 {
+  margin-bottom: 9rem;
 }
 
 .flex {
@@ -644,6 +684,14 @@ video {
   height: 3.5rem;
 }
 
+.h-36 {
+  height: 9rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -656,6 +704,22 @@ video {
   height: 100%;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.w-0 {
+  width: 0px;
+}
+
+.w-0\.5 {
+  width: 0.125rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -666,6 +730,14 @@ video {
 
 .w-3\/4 {
   width: 75%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-6 {
@@ -694,6 +766,19 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.origin-center {
+  transform-origin: center;
+}
+
+.rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform {
@@ -776,10 +861,6 @@ video {
   border-radius: 0.125rem;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .border {
   border-width: 1px;
 }
@@ -794,6 +875,10 @@ video {
 
 .bg-\[--light-navy\] {
   background-color: var(--light-navy);
+}
+
+.bg-\[--slate\] {
+  background-color: var(--slate);
 }
 
 .p-2 {
@@ -824,6 +909,18 @@ video {
   padding-bottom: 5rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pb-36 {
+  padding-bottom: 9rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .text-start {
   text-align: start;
 }
@@ -837,6 +934,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
@@ -846,14 +948,14 @@ video {
   font-size: 1.5rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
