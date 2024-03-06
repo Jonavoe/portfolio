@@ -14,7 +14,7 @@ export default function Experience() {
 
                     <h2 className='text-3xl font-bold text-[--lightest-slate]'><span className='text-[--green]'>02.</span> Where I’ve Worked</h2>
 
-                    <div className='flex flex-col md:flex-row mb-80 md:mb-0 gap-10'>
+                    <div className='flex flex-col md:flex-row mb-60 md:mb-0 gap-10'>
                         <div className='flex flex-col'>
                             <div className={`p-2 borderLeft ${select === "autoflow" ? "text-[--green] borderLeftSelect" : "text-[--slate] borderLeft w-[10rem]"}`} onClick={() => handleClick("autoflow")}>Autoflow</div>
                             <div className={`p-2  ${select === "freelancer" ? "text-[--green] borderLeftSelect" : "text-[--slate] borderLeft w-[10rem]"}`} onClick={() => handleClick("freelancer")}>Freelancer</div>
