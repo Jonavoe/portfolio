@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Experience from "../components/Experience";
 import Up from "../components/icons/Up";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 export default function Landing() {
   return (
@@ -15,6 +16,7 @@ export default function Landing() {
         <About />
         <Experience />
         <Projects />
+        <Contact />
       </div>
       <div className="flex items-center justify-center ">
         <Link
