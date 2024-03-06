@@ -61,7 +61,7 @@ export default function Header() {
                         <Link
                             className="hover:text-[--green] transition-all duration-500"
                             activeClass="active"
-                            to="work"
+                            to="contact"
                             spy={true}
                             smooth={true}
                             offset={-70}
