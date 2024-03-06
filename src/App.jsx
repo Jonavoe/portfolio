@@ -7,14 +7,24 @@ import Mail from "./components/icons/Mail";
 export default function App() {
   return (
     <>
-      <div className="fixed bottom-1 left-6">
+      <div className="fixed bottom-1 left-1 md:left-6">
         <div className="flex flex-col justify-center items-center gap-3">
-          <div className="w-5 h-5">
-            <GitHub />
-          </div>
-          <div className="w-5 h-5">
+          <a
+            className="w-5 h-5 text-[--light-slate]cursor-pointer hover:text-[--green]"
+            href="https://www.linkedin.com/in/voeffray-jonathan/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Linkedin />
-          </div>
+          </a>
+          <a
+            className="w-5 h-5 text-[--light-slate]cursor-pointer hover:text-[--green]"
+            href="https://github.com/Jonavoe"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GitHub />
+          </a>
           <a
             className="w-5 h-5 text-[--light-slate]cursor-pointer hover:text-[--green]"
             href="mailto:voeffray.jonathan@gmail.com"
@@ -23,7 +33,7 @@ export default function App() {
           >
             <Mail />
           </a>
-          <div className="h-36 bg-[--slate] w-0.5"></div>
+          <div className="h-12 md:h-36 bg-[--slate] w-0.5"></div>
         </div>
       </div>
 
