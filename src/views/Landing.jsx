@@ -6,17 +6,25 @@ import Experience from "../components/Experience";
 import Up from "../components/icons/Up";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import { useState } from "react";
 
 export default function Landing() {
+  const [es, setEs] = useState(false);
+
+  console.log(es);
+
+  const handleLenguage = () => {
+    setEs(!es);
+  };
   return (
     <>
       <div>
-        <Header />
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
+        <Header es={es} handleLenguage={handleLenguage} />
+        <Hero es={es} />
+        <About es={es} />
+        <Experience es={es} />
+        <Projects es={es} />
+        <Contact es={es} />
       </div>
       <div className="flex items-center justify-center ">
         <Link
