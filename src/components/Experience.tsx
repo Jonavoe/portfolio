@@ -8,13 +8,13 @@ export default function Experience() {
     }
 
     return (
-        <div id='experience' className='flex justify-center my-40'>
-            <div className='w-3/4 md:w-3/6'>
-                <div className='flex w-3/4 flex-col gap-4 '>
+        <div id='experience' className='flex justify-center my-10 md:my-40'>
+            <div className=' md:w-3/6'>
+                <div className='flex md:w-3/4 flex-col gap-4 '>
 
                     <h2 className='text-3xl font-bold text-[--lightest-slate]'><span className='text-[--green]'>02.</span> Where I’ve Worked</h2>
 
-                    <div className='flex gap-10'>
+                    <div className='flex flex-col md:flex-row mb-80 md:mb-0 gap-10'>
                         <div className='flex flex-col'>
                             <div className={`p-2 borderLeft ${select === "autoflow" ? "text-[--green] borderLeftSelect" : "text-[--slate] borderLeft w-[10rem]"}`} onClick={() => handleClick("autoflow")}>Autoflow</div>
                             <div className={`p-2  ${select === "freelancer" ? "text-[--green] borderLeftSelect" : "text-[--slate] borderLeft w-[10rem]"}`} onClick={() => handleClick("freelancer")}>Freelancer</div>
@@ -28,7 +28,7 @@ export default function Experience() {
                                 </h3>
                                 <p className='text-sm text-[--slate]'>October 2023 - Present</p>
                                 <div className='mt-6'>
-                                    <div className='flex gap-4'>
+                                    <div className='flex gap-4 '>
                                         <span className='text-[--green]'>▹</span>
                                         <p className='text-[--slate]'>
                                             Developed a new web application for car dealerships using React and Next.js.
