@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export default function CardLeft({ image, title, description, technologies, git, page }) {
     return (
-        <div className='relative flex justify-end w-full h-full mb-14'>
+        <div className='relative justify-end w-full h-full mb-14 hidden md:flex'>
             <div className='absolute w-7/12 z-0 rounded-md'>
                 <div className='div-1 z-50 absolute w-full h-full rounded-md'></div>
                 <img className='z-40 rounded-md' src={image} alt="profile" />
