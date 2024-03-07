@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function Experience() {
+export default function Experience({ es }) {
     const [select, setSelect] = useState("autoflow")
 
     const handleClick = (value: string) => {
@@ -12,7 +12,7 @@ export default function Experience() {
             <div className=' md:w-3/6'>
                 <div className='flex md:w-3/4 flex-col gap-4 '>
 
-                    <h2 className='text-3xl font-bold text-[--lightest-slate]'><span className='text-[--green]'>02.</span> Where I’ve Worked</h2>
+                    <h2 className='text-3xl font-bold text-[--lightest-slate]'><span className='text-[--green]'>02.</span> {es ? "Experiencia Laboral" : "Where I’ve Worked"}</h2>
 
                     <div className='flex flex-col md:flex-row mb-60 md:mb-0 gap-10'>
                         <div className='flex flex-col'>
@@ -26,12 +26,12 @@ export default function Experience() {
                                     Full Stack Developer <span className='text-[--green]'> <span className='text-[--green]'>@</span> <a className='hover-underline-animation' href="https://www.autoflow.com.ar/" target='_blank'>Autoflow</a>
                                     </span>
                                 </h3>
-                                <p className='text-sm text-[--slate]'>October 2023 - Present</p>
+                                <p className='text-sm text-[--slate]'>Octubre 2023 - Marzo 2024</p>
                                 <div className='mt-6'>
                                     <div className='flex gap-4 '>
                                         <span className='text-[--green]'>▹</span>
-                                        <p className='text-[--slate]'>
-                                            Developed a new web application for car dealerships using React and Next.js.
+                                        <p className='text-[--slate]'>{es ? "Desarrollé una nueva aplicación web para concesionarios de automóviles utilizando React y Next.js." : "Developed a new web application for car dealerships using React and Next.js."}
+
                                         </p>
                                     </div>
                                     <div className='flex gap-4'>
