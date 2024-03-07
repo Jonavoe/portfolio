@@ -7,6 +7,7 @@ import Up from "../components/icons/Up";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import { useState } from "react";
+import OtherProjects from "../components/OtherProjects";
 
 export default function Landing() {
   const [es, setEs] = useState(false);
@@ -24,6 +25,7 @@ export default function Landing() {
         <About es={es} />
         <Experience es={es} />
         <Projects es={es} />
+        {/* <OtherProjects es={es} /> */}
         <Contact es={es} />
       </div>
       <div className="flex items-center justify-center ">
