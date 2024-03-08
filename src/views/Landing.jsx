@@ -12,8 +12,6 @@ import OtherProjects from "../components/OtherProjects";
 export default function Landing() {
   const [es, setEs] = useState(false);
 
-  console.log(es);
-
   const handleLenguage = () => {
     setEs(!es);
   };
@@ -32,7 +30,7 @@ export default function Landing() {
         <Link
           className="hover:text-[--green] transition-all duration-500 mb-5"
           activeClass="active"
-          to="header"
+          to="hero"
           spy={true}
           smooth={true}
           offset={-70}
