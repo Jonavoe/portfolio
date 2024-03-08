@@ -16,8 +16,6 @@ export default function Projects({ es }) {
                     <h2 className='text-3xl font-bold text-[--lightest-slate]'><span className='text-[--green]'>03.</span> Some Things I’ve Built</h2>
                     <div className='flex flex-col md:gap-10'>
 
-                        const es = true; // Variable que indica el idioma
-
                         <CardRight
                             image={AutoflowLanding}
                             title={es ? "Autoflow Landing" : "Autoflow Landing"}
@@ -41,7 +39,7 @@ export default function Projects({ es }) {
                             image={smlapp}
                             title={es ? "Social Media Lab Empleados" : "Social Media Lab Employees"}
                             description={es ? "Se desarrolló una aplicación web para una gestión eficiente de empleados. Se implementaron funcionalidades clave que incluyen la incorporación, la baja, la gestión de permisos y herramientas de comunicación. Se diseñó una interfaz intuitiva para un acceso rápido a la información necesaria." : "Developed web app for efficient employee management. Implemented key functionalities including onboarding, offboarding, permissions management, and communication tools. Designed intuitive interface for quick access to necessary information."}
-                            technologies={["ReactJs", "NodeJs", "MongoDB", "PostgreSQL", "Clerk", "TailwindCSS", "GitHub"]}
+                            technologies={["ReactJs", "NodeJs", "MongoDB", "TailwindCSS", "GitHub"]}
                             git={"https://github.com/Jonavoe/Ventas"}
                             page={"https://ventas-jonavoe.vercel.app/"}
                         />
@@ -50,7 +48,7 @@ export default function Projects({ es }) {
                             image={vendedores}
                             title={es ? "Social Media Lab Vendedores" : "Social Media Lab  Sellers"}
                             description={es ? "Se desarrolló una herramienta de comunicación para una interacción eficiente con los leads (clientes potenciales). Se implementó un sistema de registro de ventas para grabar las interacciones y las ventas cerradas. Se generaron informes personalizados que brindan información valiosa sobre el desempeño de los representantes de ventas, lo que ayuda a los gerentes a tomar decisiones estratégicas." : "Built communication tool for efficient lead interaction. Implemented sales logging system for recording interactions and completed sales. Generated custom reports for insights into sales reps' performance, aiding strategic decision-making by managers."}
-                            technologies={["ReactJs", "NodeJs", "MongoDB", "PostgreSQL", "Clerk", "TailwindCSS", "GitHub"]}
+                            technologies={["ReactJs", "NodeJs", "MongoDB", "TailwindCSS", "GitHub"]}
                             git={"https://github.com/Jonavoe/Ventas"}
                             page={"https://ventas-jonavoe.vercel.app/"}
                         />
@@ -59,7 +57,7 @@ export default function Projects({ es }) {
                             image={corredores}
                             title={es ? "Social Media Lab Corredores" : "Social Media Lab Runners"}
                             description={es ? "Se creó un sistema para clasificar leads (clientes potenciales) y su asignación automatizada a representantes de ventas. Se desarrolló un sistema de seguimiento del progreso para monitorear a los leads a lo largo de todo el proceso de ventas." : "Created system for categorizing leads and automated assignment to sales reps. Developed progress tracking system for monitoring leads throughout the sales process."}
-                            technologies={["ReactJs", "NodeJs", "MongoDB", "PostgreSQL", "Clerk", "TailwindCSS", "GitHub"]}
+                            technologies={["ReactJs", "NodeJs", "MongoDB", "TailwindCSS", "GitHub"]}
                             git={"https://github.com/Jonavoe/Ventas"}
                             page={"https://ventas-jonavoe.vercel.app/"}
                         />
