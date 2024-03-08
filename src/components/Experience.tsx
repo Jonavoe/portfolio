@@ -26,7 +26,7 @@ export default function Experience({ es }) {
                                     Full Stack Developer <span className='text-[--green]'> <span className='text-[--green]'>@</span> <a className='hover-underline-animation' href="https://www.autoflow.com.ar/" target='_blank'>Autoflow</a>
                                     </span>
                                 </h3>
-                                <p className='text-sm text-[--slate]'>Octubre 2023 - Marzo 2024</p>
+                                <p className='text-sm text-[--slate]'>{es ? "Octubre 2023 - Marzo 2024" : "October 2023 - March 2024"}</p>
                                 <div className='mt-6'>
                                     <div className='flex gap-4 '>
                                         <span className='text-[--green]'>▹</span>
@@ -37,7 +37,7 @@ export default function Experience({ es }) {
                                     <div className='flex gap-4'>
                                         <span className='text-[--green]'>▹</span>
                                         <p className='text-[--slate]'>
-                                            Collaborated with the backend team to integrate the application with the data management system, ensuring seamless data flow.
+                                            {es ? "Trabajé en conjunto con el equipo de back-end para integrar la aplicación con el sistema de gestión de datos, garantizando un flujo de información continuo." : "Collaborated with the backend team to integrate the application with the data management system, ensuring seamless data flow."}
                                         </p>
 
                                     </div>
@@ -48,12 +48,12 @@ export default function Experience({ es }) {
                                     Full Stack Developer <span className='text-[--green]'>@ </span><span className='text-[--green] hover-underline-animation'> Freelancer
                                     </span>
                                 </h3>
-                                <p className='text-sm text-[--slate]'>September 2023 - Present</p>
+                                <p className='text-sm text-[--slate]'>{es ? "Septiembre 2023 - Actualidad" : "September 2023 - Present"}</p>
                                 <div className='mt-6'>
                                     <div className='flex gap-4'>
                                         <span className='text-[--green]'>▹</span>
                                         <p className='text-[--slate]'>
-                                            Provided freelance services specializing in creating landing pages and blogs for various clients, exceeding their expectations for functionality and design.
+                                            {es ? "Ofrecí servicios freelance como especialista en la creación de páginas de aterrizaje y blogs para diversos clientes, superando sus expectativas en funcionalidad y diseño. " : "Provided freelance services specializing in creating landing pages and blogs for various clients, exceeding their expectations for functionality and design."}
                                         </p>
                                     </div>
                                 </div>
@@ -65,18 +65,18 @@ export default function Experience({ es }) {
                                     Full Stack Developer <span className='text-[--green] '><span className='text-[--green]'>@ </span><a className='hover-underline-animation' href="https://www.socialmedialab.ai/" target="_blank" rel="noopener noreferrer">Social Media Lab AI</a>
                                     </span>
                                 </h3>
-                                <p className='text-sm text-[--slate]'>April 2023 - September 2023</p>
+                                <p className='text-sm text-[--slate]'>{es ? "Abril 2023 - Semptiembre 2023" : "April 2023 - September 2023"}</p>
                                 <div className='mt-6'>
                                     <div className='flex gap-4'>
                                         <span className='text-[--green]'>▹</span>
                                         <p className='text-[--slate]'>
-                                            Contributed to the development of innovative web applications, including "Employee Application" and "Client Application," utilizing React and Node.js.
+                                            {es ? 'Contribuí al desarrollo de innovadoras aplicaciones web, como la "Aplicación para Empleados" y la "Aplicación para Clientes", utilizando React y Node.js.' : 'Contributed to the development of innovative web applications, including "Employee Application" and "Client Application," utilizing React and Node.js.'}
                                         </p>
                                     </div>
                                     <div className='flex gap-4'>
                                         <span className='text-[--green]'>▹</span>
                                         <p className='text-[--slate]'>
-                                            Played a key role in enhancing the functionality and user experience of the platform, contributing to improved client management and employee engagement.
+                                            {es ? "Jugué un papel clave en la mejora de la funcionalidad y la experiencia de usuario de la plataforma, lo que contribuyó a una mejor gestión de clientes y al compromiso de los empleados." : "Played a key role in enhancing the functionality and user experience of the platform, contributing to improved client management and employee engagement."}
 
                                         </p>
 
