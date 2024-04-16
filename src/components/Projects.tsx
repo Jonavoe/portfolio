@@ -4,9 +4,9 @@ import AutoflowDesktop from "../assets/AutoflowDesktop.png"
 import smlapp from "../assets/smlapp.png"
 import vendedores from "../assets/vendedores.png"
 import corredores from "../assets/corredores.png"
+import belloniAgro from "../assets/BelloniAgro.png"
 import CardRight from './CardRight'
 import CardLeft from './CardLeft'
-import CardMobile from './CardMobile'
 export default function Projects({ es }) {
 
     return (
@@ -15,6 +15,16 @@ export default function Projects({ es }) {
                 <div className='flex flex-col gap-4 '>
                     <h2 className='text-3xl font-bold text-[--lightest-slate]'><span className='text-[--green]'>03.</span> Some Things I’ve Built</h2>
                     <div className='flex flex-col md:gap-10'>
+
+
+                        <CardLeft
+                            image={belloniAgro}
+                            title={es ? "Belloni Agro" : "Belloni Agro"}
+                            description={es ? "Creación de una Landing Page diseñada para Belloni Profesionales del Agro. Con tecnología NextJs, tailwindcss y TypeScript, ofrece un diseño atractivo y una funcionalidad impecable. Desplegada en Vercel para un rendimiento óptimo." : "Creation of a Landing Page designed for Belloni Agro Professionals. Utilizing NextJs, tailwindcss and TypeScript technology, it offers an attractive design and flawless functionality. Deployed on Vercel for optimal performance."}
+                            technologies={["NextJs", "TypeScript", "Github", "TailwindCSS", "Vercel"]}
+                            git={"https://github.com/Jonavoe/agro"}
+                            page={"https://belloniagro.vercel.app/"}
+                        />
 
                         <CardRight
                             image={AutoflowLanding}
