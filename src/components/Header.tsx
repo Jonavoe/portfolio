@@ -113,7 +113,7 @@ export default function Header({ es, handleLenguage }) {
                             </Link>
                         </li>
                     </ul>
-                    <a className="border rounded-sm border-[--green] px-2 py-1 cursor-pointer hover:text-[--green]" href={`${es ? "https://drive.google.com/file/d/19xLz9cup3NS1R7cB9P5kUHDrLa6lT5f_/view?usp=sharing" : "https://drive.google.com/file/d/12FmML7tNOXSdCl0lCtTYDBZE7YyYvMvp/view?usp=sharing"}`} target='_blank'>
+                    <a className="border rounded-sm border-[--green] px-2 py-1 cursor-pointer hover:text-[--green]" href={`${es ? "https://drive.google.com/file/d/1iLhO3n9er37J0QFQbVX-FzawySfKK0Az/view?usp=sharing" : "https://drive.google.com/file/d/1GmeoJzjo3V3BBoi3u0xFHR34qnvPUrtb/view?usp=sharing"}`} target='_blank'>
                         {es ? "Resumen" : "Resume"}
                     </a>
                     {es ?
